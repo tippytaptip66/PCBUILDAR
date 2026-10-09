@@ -62,15 +62,8 @@ A comprehensive built-in curriculum to solidify your hardware knowledge.
 
 ---
 
-## 📸 Screenshots
-*(Coming Soon - Add your app screenshots here!)*
-
-| AR Scanner | Virtual Assembly | Learning Hub |
-|:---:|:---:|:---:|
-| <img src="https://via.placeholder.com/250x400.png?text=AR+Scanner" width="250"> | <img src="https://via.placeholder.com/250x400.png?text=Virtual+Assembly" width="250"> | <img src="https://via.placeholder.com/250x400.png?text=Learning+Hub" width="250"> |
-
 ---
 
 <div align="center">
-  <i>Built as a BSCS Thesis Project.</i>
+  <i>Built as a Thesis Project.</i>
 </div>
