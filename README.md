@@ -52,7 +52,7 @@ A comprehensive built-in curriculum to solidify your hardware knowledge.
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/BuildAR.git
+   git clone https://github.com/tippytaptip66/PCBuildAR.git
    ```
 2. Open the `BuildAR` folder in Unity Hub.
 3. Open the `BuildAR_App` scene located in `Assets/_Project/Scenes/` (if not loaded by default).
