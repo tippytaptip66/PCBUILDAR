@@ -1,11 +1,11 @@
 <div align="center">
-  <h1>🛠️ BuildAR</h1>
+  <h1>🛠️ PCBuildAR</h1>
   <p><strong>Demystifying PC Building with Augmented Reality & Machine Learning</strong></p>
 </div>
 
 <br/>
 
-**BuildAR** is an interactive, educational Unity application designed to teach computer science students and tech enthusiasts how to identify, understand, and assemble PC hardware components. By bridging the gap between theoretical knowledge and practical experience, BuildAR lets you learn PC assembly without the fear of breaking expensive hardware.
+**PCBuildAR** is an interactive, educational Unity application designed to teach computer science students and tech enthusiasts how to identify, understand, and assemble PC hardware components. By bridging the gap between theoretical knowledge and practical experience, BuildAR lets you learn PC assembly without the fear of breaking expensive hardware.
 
 ---
 
