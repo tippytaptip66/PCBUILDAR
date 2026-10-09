@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4188eded89992a545a0ee17a3fb13478, type: 3}
+  m_Name: gpu
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.ComponentDefinitionSO
+  id: gpu
+  displayName: Graphics Card (GPU)
+  category: 4
+  icon: {fileID: 0}
+  mlLabel: gpu
+  mlAliases: []
+  specChips:
+  - PCIe x16
+  - 8-pin power
+  - 650 W PSU
+  shortDescription: Draws images, video and 3D graphics. Plugs into the PCIe x16
+    slot and needs extra power.
+  whatItDoes: The GPU has thousands of small cores that work in parallel, which is
+    ideal for drawing frames in games and 3D apps.
+  keyFacts:
+  - Uses the top PCIe x16 slot
+  - Needs an 8-pin PCIe power cable
+  - Plug your monitor into the card, not the motherboard
+  installationSteps:
+  - Remove the expansion slot covers on the case.
+  - Open the PCIe slot latch.
+  - Press the card straight down until the latch clicks.
+  - Screw the bracket to the case and connect PCIe power.
+  safetyTip: Support long, heavy cards so they don't sag and stress the slot.
+  model3DPrefab: {fileID: 6483812135977243574, guid: 1a56c0daa18593d4e994e90de09f8006, type: 3}
+  modelRotationEuler: {x: 0, y: 0, z: 0}
+  modelFans:
+  - center: {x: 0.2016, y: 0.0112, z: 0.4939}
+    facing: {x: 0, y: -1, z: 0}
+    radius: 0.1309
+    depth: 0.06
+    inset: 0
+    frame: 0
+    blades: 11
+    rpm: 150
+    rgbRing: 1
+  - center: {x: 0.5076, y: 0.0112, z: 0.4828}
+    facing: {x: 0, y: -1, z: 0}
+    radius: 0.1332
+    depth: 0.06
+    inset: 0
+    frame: 0
+    blades: 11
+    rpm: 150
+    rgbRing: 1
+  - center: {x: 0.8177, y: 0.0112, z: 0.4782}
+    facing: {x: 0, y: -1, z: 0}
+    radius: 0.1326
+    depth: 0.06
+    inset: 0
+    frame: 0
+    blades: 11
+    rpm: 150
+    rgbRing: 1
+  modelLightBars:
+  - center: {x: 0.55, y: 0.3, z: -0.006}
+    size: {x: 0.55, y: 0.3, z: 0.012}
+  modelPanels: []
+  modelLabels:
+  - title: "Cooling fans"
+    description: "Pull air through the heatsink to cool the GPU chip. They face down when installed."
+    kind: 0
+    center: {x: 0.5, y: 0.0007, z: 0.47}
+    facing: {x: 0, y: -1, z: 0}
+  - title: "Display outputs"
+    description: "HDMI and DisplayPort. Plug your monitor in here, not into the motherboard."
+    kind: 5
+    center: {x: 0.0002, y: 0.45, z: 0.53}
+    facing: {x: -1, y: 0, z: 0}
+  - title: "8-pin PCIe power"
+    description: "Extra power from the PSU. Use a PCIe cable, not the CPU's EPS cable."
+    kind: 6
+    center: {x: 0.86, y: 0.5, z: 0.9999}
+    facing: {x: 0, y: 0, z: 1}
+  - title: "PCIe x16 connector"
+    description: "Gold fingers that plug into the motherboard's PCIe x16 slot."
+    kind: 1
+    center: {x: 0.35, y: 0.5, z: 0.1119}
+    facing: {x: 0, y: 0, z: -1}
+  - title: "Backplate"
+    description: "Metal plate that stiffens the card and helps spread heat."
+    kind: 0
+    center: {x: 0.5, y: 0.9856, z: 0.5}
+    facing: {x: 0, y: 1, z: 0}
+  connectionPoints: []
+  arLabels:
+  - text: PCIe x16 connector
+    positionInBox: {x: 0.4, y: 0.96}
+    description: 
+  - text: 8-pin power
+    positionInBox: {x: 0.85, y: 0.04}
+    description: 
+  - text: Display outputs
+    positionInBox: {x: 0.02, y: 0.5}
+    description: 
+  - text: Fans
+    positionInBox: {x: 0.5, y: 0.45}
+    description: 
+  compatibilityRules:
+  - ruleType: 2
+    stringValue: 
+    intValue: 650
+  quizQuestions:
+  - {fileID: 11400000, guid: 5ff11f02ad305354cb20dbae45800db2, type: 2}
+  - {fileID: 11400000, guid: a4d20a725f45fcd44889c2d56fea51d1, type: 2}
+  - {fileID: 11400000, guid: 3d91767c5a510724fa91a391978a8bf9, type: 2}

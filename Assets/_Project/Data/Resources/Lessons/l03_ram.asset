@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cedca804eff092449184c3d0b4d5557, type: 3}
+  m_Name: l03_ram
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.LessonSO
+  lessonId: l03_ram
+  title: Memory (RAM) basics
+  summary: Short-term memory.
+  difficulty: 0
+  estimatedMinutes: 5
+  stage: 0
+  order: 2
+  relatedCategory: 2
+  relatedComponentId: ram_ddr5
+  prerequisiteLessonIds:
+  - l01_inside_pc
+  quiz:
+  - {fileID: 11400000, guid: 34c6e10beecba8e46b5d4148f873b8d8, type: 2}
+  - {fileID: 11400000, guid: 03dba2788d5c95e45b983ffdc215f5dd, type: 2}
+  - {fileID: 11400000, guid: 0c1d1255364d5f1c9cea671bcfcb45c6, type: 2}
+  - {fileID: 11400000, guid: f55834a429c15e1fa7b486486341b149, type: 2}
+  - {fileID: 11400000, guid: 572571d22bd356eb8fccdfdfb68e2d7f, type: 2}
+  - {fileID: 11400000, guid: 8b4b2e9a8be459979a384ad5f2e0ede3, type: 2}
+  - {fileID: 11400000, guid: abfc4d3e34b65bd5af140296d851dd56, type: 2}
+  - {fileID: 11400000, guid: 78e0b41c61875d3d89e4b43f2dbfdbba, type: 2}
+  - {fileID: 11400000, guid: 036df69f34fc56c8bb029f85c1846830, type: 2}
+  - {fileID: 11400000, guid: bc4ed6c325e858638b24b5887044b5bb, type: 2}
+  - {fileID: 11400000, guid: f185daefe71a5a0aae31ddbfcb9531b3, type: 2}
+  - {fileID: 11400000, guid: 250872db6ad05fea9f85c25dbf7ec0a4, type: 2}
+  - {fileID: 11400000, guid: a69f35cffce75aff8b2b73b1f89284bd, type: 2}
+  - {fileID: 11400000, guid: 9059bff5f40a5a128f027a30b8b4dc19, type: 2}
+  - {fileID: 11400000, guid: 0b8fd9e1183b5052b320c7161a02737b, type: 2}
+  - {fileID: 11400000, guid: 957d4cf5e5d45cdd8ac0b3b0a9f8f15d, type: 2}
+  - {fileID: 11400000, guid: f45e0949bc6d5c0d952a318e28c578c3, type: 2}
+  - {fileID: 11400000, guid: 92ab6a7d06e15ba8befb8f993d0cf208, type: 2}
+  - {fileID: 11400000, guid: 7aa3918d57c755d885621dbb6ca958e5, type: 2}
+  - {fileID: 11400000, guid: 53bec1df85ef59418fe7f6a8710db91e, type: 2}

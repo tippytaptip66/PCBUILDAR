@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cedca804eff092449184c3d0b4d5557, type: 3}
+  m_Name: l13_first_boot
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.LessonSO
+  lessonId: l13_first_boot
+  title: First boot & troubleshooting
+  summary: Power on and check.
+  difficulty: 1
+  estimatedMinutes: 8
+  stage: 4
+  order: 0
+  relatedCategory: 9
+  relatedComponentId: io_panel
+  prerequisiteLessonIds:
+  - l12_cables
+  quiz:
+  - {fileID: 11400000, guid: cca0fe1f78cfba64c912c60983f9cb71, type: 2}
+  - {fileID: 11400000, guid: 851829a4b79e73b4bac43b355b3e13c4, type: 2}
+  - {fileID: 11400000, guid: 6de002feed0e5de1be6bb2bea33543a8, type: 2}
+  - {fileID: 11400000, guid: a67083ef81575af8a571b41466c5290e, type: 2}
+  - {fileID: 11400000, guid: c3734f601efb53a5be777c65ecb90150, type: 2}
+  - {fileID: 11400000, guid: 568c406228055199862dcc4769ca1057, type: 2}
+  - {fileID: 11400000, guid: 71869553c4f950458d7526a597d6fb09, type: 2}
+  - {fileID: 11400000, guid: e60b93182a9e543695ae2f67eeb95457, type: 2}
+  - {fileID: 11400000, guid: f5b9a9444822515dbe0fb019a73d5fd9, type: 2}
+  - {fileID: 11400000, guid: 352d2cba456f563fa13631e9fa6bb976, type: 2}
+  - {fileID: 11400000, guid: c51a9e4402155938b1c336a95b1b1012, type: 2}
+  - {fileID: 11400000, guid: f532f1f7d6af50abb4c8786e3c5169dd, type: 2}
+  - {fileID: 11400000, guid: f688f94cbfdd5ea6a95569cb05ba6497, type: 2}
+  - {fileID: 11400000, guid: 9175e12671cd5355bf8f89081325c960, type: 2}
+  - {fileID: 11400000, guid: ae870069b6d05ab7a7ae471c74c1961b, type: 2}
+  - {fileID: 11400000, guid: 2f01b664312b5200b0632ff18f4c9701, type: 2}
+  - {fileID: 11400000, guid: 7fe3e15ca9205962a3b0a75b43bacaac, type: 2}
+  - {fileID: 11400000, guid: 6d052c91de305a2ca3aa804f33c48a46, type: 2}
+  - {fileID: 11400000, guid: 8f91aa761e785035bc34482e90510344, type: 2}
+  - {fileID: 11400000, guid: a6dc347a796f5823a1337b59188a6d09, type: 2}

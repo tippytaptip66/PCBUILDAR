@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4188eded89992a545a0ee17a3fb13478, type: 3}
+  m_Name: sata_ssd
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.ComponentDefinitionSO
+  id: sata_ssd
+  displayName: Storage Drive (SATA SSD)
+  category: 3
+  icon: {fileID: 0}
+  mlLabel: 
+  mlAliases: []
+  specChips:
+  - 2.5-inch
+  - SATA III
+  - 1 TB
+  shortDescription: 'A 2.5-inch drive for extra space: games, photos and backups.
+    Keeps everything when the power is off.'
+  whatItDoes: 'A SATA SSD stores data in flash memory like an M.2 drive, but in a
+    2.5-inch case with two cables: SATA power from the PSU and SATA data to the motherboard.
+    It''s slower than NVMe but still far faster than a hard drive.'
+  keyFacts:
+  - 'Needs two cables: SATA power and SATA data'
+  - Up to about 550 MB/s
+  - Mounts in a drive bay, bracket or the PSU basement
+  installationSteps:
+  - Mount the drive in its bay or bracket.
+  - Plug the SATA power cable from the PSU into the wide socket.
+  - Plug a SATA data cable from the motherboard into the narrow socket.
+  - Tidy both cables behind the tray.
+  safetyTip: Hold drives by their edges and don't drop them.
+  model3DPrefab: {fileID: 8627656446063389705, guid: 8232288a95ad65a4daf7209dab832392, type: 3}
+  modelRotationEuler: {x: 0, y: 0, z: 0}
+  modelFans: []
+  modelLightBars: []
+  modelPanels: []
+  connectionPoints: []
+  arLabels: []
+  compatibilityRules:
+  - ruleType: 4
+    stringValue: SATA
+    intValue: 0
+  quizQuestions:
+  - {fileID: 11400000, guid: e6ec9babe1d84b44785ff6b0747833be, type: 2}
+  - {fileID: 11400000, guid: 4dc0e14883c7dcf44b3066065c452dfe, type: 2}
+  - {fileID: 11400000, guid: 0f9445b16d05ec04fac1735aebd619cc, type: 2}

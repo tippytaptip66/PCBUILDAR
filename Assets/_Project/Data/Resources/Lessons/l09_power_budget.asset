@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cedca804eff092449184c3d0b4d5557, type: 3}
+  m_Name: l09_power_budget
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.LessonSO
+  lessonId: l09_power_budget
+  title: Power budget
+  summary: Choosing enough wattage.
+  difficulty: 1
+  estimatedMinutes: 6
+  stage: 1
+  order: 1
+  relatedCategory: 5
+  relatedComponentId: psu
+  prerequisiteLessonIds:
+  - l06_gpu
+  - l07_psu
+  quiz:
+  - {fileID: 11400000, guid: 5089f78798a1537cbab055d6dff94e1d, type: 2}
+  - {fileID: 11400000, guid: 5cf681cfaed259efbf60a7605ead5b44, type: 2}
+  - {fileID: 11400000, guid: b85afd214d6a5b04807651d3dc656a5f, type: 2}
+  - {fileID: 11400000, guid: 493540163e6b5e6ca0e963a8f83a2f8f, type: 2}
+  - {fileID: 11400000, guid: 1065b8eb6c5b5cacb3a57f54c171bfc0, type: 2}
+  - {fileID: 11400000, guid: 41e6628e209a5f93bab4fbdfb483c716, type: 2}
+  - {fileID: 11400000, guid: 9894b3c4f49b562eb868e4e29d3264de, type: 2}
+  - {fileID: 11400000, guid: af58019888b157598536d25ddfabdbc3, type: 2}
+  - {fileID: 11400000, guid: d471e44d573a528597a43706ba3a29e9, type: 2}
+  - {fileID: 11400000, guid: 6b0311514ead55b5b5d02b08bc084fd9, type: 2}
+  - {fileID: 11400000, guid: 7dc95f716a4a53898adf47ac30dd921e, type: 2}
+  - {fileID: 11400000, guid: 7e54cb87d09f581da01526638a48c770, type: 2}
+  - {fileID: 11400000, guid: 4b44417bf4415802b5734cec8da18bf2, type: 2}
+  - {fileID: 11400000, guid: 02f90352e1cb5117a2d6a9d97273e80a, type: 2}
+  - {fileID: 11400000, guid: 6423d9a8a4b054239511b3f520eeb342, type: 2}
+  - {fileID: 11400000, guid: 30a477fba6b75f249f153f463c8410c2, type: 2}
+  - {fileID: 11400000, guid: 7f90fd10a0f85a7b8015a47d50c12855, type: 2}
+  - {fileID: 11400000, guid: 202c380b39615ddfa7418acda8c50ea1, type: 2}
+  - {fileID: 11400000, guid: 6ec5c55515ad5e74a4c48cd0413c37f0, type: 2}
+  - {fileID: 11400000, guid: 5bd2898a4cc3547aa5a2770a5bd864de, type: 2}

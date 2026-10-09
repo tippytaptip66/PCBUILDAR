@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4188eded89992a545a0ee17a3fb13478, type: 3}
+  m_Name: pc_case
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.ComponentDefinitionSO
+  id: pc_case
+  displayName: PC Case
+  category: 7
+  icon: {fileID: 0}
+  mlLabel: case
+  mlAliases: []
+  specChips:
+  - ATX
+  - Mid tower
+  - Tempered glass
+  shortDescription: Holds and protects every part and guides airflow.
+  whatItDoes: The case has mounting points for the motherboard, drives and PSU, plus
+    front-panel buttons and ports.
+  keyFacts:
+  - Supports ATX motherboards
+  - Bottom PSU shroud
+  - 'Front I/O: USB and audio'
+  installationSteps:
+  - Remove both side panels and store the screws.
+  - Check pre-installed standoffs.
+  - Lay the case on its side on a clear, non-carpeted table.
+  safetyTip: Work on a hard surface and touch the bare metal frame to discharge static.
+  model3DPrefab: {fileID: 6473301518303089491, guid: d8ed1e0095ac7914d82949ca3ca1e36e, type: 3}
+  modelRotationEuler: {x: 0, y: 0, z: 0}
+  modelFans:
+  - center: {x: 0.9926, y: 0.3378, z: 0.7482}
+    facing: {x: 1, y: 0, z: 0}
+    radius: 0.11
+    depth: 0.165
+    inset: 0.105
+    frame: 1
+    blades: 9
+    rpm: 150
+    rgbRing: 1
+  modelLightBars: []
+  modelPanels:
+  - kind: 0
+    center: {x: 0.9926, y: 0.6932, z: 0.7495}
+    facing: {x: 1, y: 0, z: 0}
+    up: {x: 0, y: 0, z: 1}
+    width: 0.0434
+  - kind: 1
+    center: {x: 0.0617, y: 0.5, z: 1}
+    facing: {x: 0, y: 0, z: 1}
+    up: {x: 1, y: 0, z: 0}
+    width: 0.2636
+  connectionPoints: []
+  arLabels:
+  - text: Front I/O
+    positionInBox: {x: 0.95, y: 0.1}
+    description: 
+  - text: PSU shroud
+    positionInBox: {x: 0.6, y: 0.85}
+    description: 
+  - text: Motherboard tray
+    positionInBox: {x: 0.4, y: 0.4}
+    description: 
+  - text: Rear fan
+    positionInBox: {x: 0.05, y: 0.2}
+    description: 
+  compatibilityRules:
+  - ruleType: 3
+    stringValue: ATX
+    intValue: 0
+  quizQuestions:
+  - {fileID: 11400000, guid: 14e7a323eda8ddd43bbee99fb28fcb6a, type: 2}
+  - {fileID: 11400000, guid: 3dc2bee7d2292cf44b882795d864daaf, type: 2}
+  - {fileID: 11400000, guid: a7386a5bd98a10f47b3278dfb79b5c1e, type: 2}

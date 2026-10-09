@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5c81bd7c0110f4787c3c067abde81f, type: 3}
+  m_Name: l06_q20
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.QuizQuestionSO
+  questionType: 0
+  questionText: "The \"650 W PSU\" chip on this graphics card means\u2026"
+  options:
+  - "The whole PC needs at least a 650 W power supply"
+  - "The card alone uses 650 W"
+  - "The fans spin at 650 rpm"
+  - "The card weighs 650 g"
+  correctOptionIndex: 0
+  statementIsTrue: 0
+  answer: 
+  acceptedAnswers: []
+  distractors: []
+  pairs: []
+  explanation: "It's the maker's recommended PSU size for a whole system with this card."
+  isSafetyQuestion: 0

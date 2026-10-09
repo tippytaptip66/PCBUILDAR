@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4188eded89992a545a0ee17a3fb13478, type: 3}
+  m_Name: psu
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.ComponentDefinitionSO
+  id: psu
+  displayName: Power Supply (PSU)
+  category: 5
+  icon: {fileID: 0}
+  mlLabel: psu
+  mlAliases: []
+  specChips:
+  - ATX
+  - 700 W
+  - 80+ Gold
+  shortDescription: Turns wall power into the steady DC voltages every component
+    needs.
+  whatItDoes: The PSU converts AC mains electricity into 12 V, 5 V and 3.3 V DC and
+    distributes it through its cables.
+  keyFacts:
+  - Rated at 700 W
+  - Has 24-pin, EPS 8-pin, PCIe and SATA cables
+  - Keep the switch at O (off) while building
+  installationSteps:
+  - Set the switch to O and unplug it.
+  - Slide it into the bottom bay, fan facing down.
+  - Screw it in from the back of the case.
+  - Route cables through the grommets.
+  safetyTip: "Never open a power supply \u2014 capacitors inside can hold a dangerous
+    charge."
+  model3DPrefab: {fileID: 5534157210804770913, guid: 6792e12c797bc454dbeb2a050a4efc45, type: 3}
+  modelRotationEuler: {x: 180, y: 0, z: 0}
+  modelFans: []
+  modelLightBars: []
+  modelPanels: []
+  modelLabels:
+  - title: "Intake fan"
+    description: "Install the PSU fan-down when the case has a bottom vent."
+    kind: 0
+    center: {x: 0.52, y: 0.5, z: 0.9848}
+    facing: {x: 0, y: 0, z: 1}
+  - title: "AC inlet"
+    description: "The wall power cable plugs in here. Unplug it before working inside."
+    kind: 5
+    center: {x: 0.21, y: 0.0062, z: 0.71}
+    facing: {x: 0, y: -1, z: 0}
+  - title: "Power switch"
+    description: "I = on, O = off. Keep it at O while you build."
+    kind: 0
+    center: {x: 0.35, y: 0.0878, z: 0.7}
+    facing: {x: 0, y: -1, z: 0}
+  - title: "Exhaust vent"
+    description: "Warm air leaves through here. Keep it clear."
+    kind: 0
+    center: {x: 0.6, y: 0.0039, z: 0.4}
+    facing: {x: 0, y: -1, z: 0}
+  - title: "Specification label"
+    description: "Wattage, efficiency rating and safety marks. This one is 700 W, 80+ Gold."
+    kind: 0
+    center: {x: 0.9974, y: 0.5, z: 0.5}
+    facing: {x: 1, y: 0, z: 0}
+  connectionPoints: []
+  arLabels:
+  - text: 24-pin cable
+    positionInBox: {x: 0.8, y: 0.2}
+    description: 
+  - text: Power switch
+    positionInBox: {x: 0.1, y: 0.8}
+    description: 
+  - text: Fan
+    positionInBox: {x: 0.5, y: 0.5}
+    description: 
+  - text: AC inlet
+    positionInBox: {x: 0.1, y: 0.5}
+    description: 
+  compatibilityRules:
+  - ruleType: 5
+    stringValue: 
+    intValue: 700
+  - ruleType: 3
+    stringValue: ATX
+    intValue: 0
+  quizQuestions:
+  - {fileID: 11400000, guid: c99bc59c7a784644eb80ee7f93c0569e, type: 2}
+  - {fileID: 11400000, guid: 56b4b22d0afafaa4bafa790e944b0d28, type: 2}
+  - {fileID: 11400000, guid: f300fdb3d8b77f440b38c1e0c16b76c7, type: 2}
+  - {fileID: 11400000, guid: 2771ca1537a23b447ba5ce290ad74203, type: 2}

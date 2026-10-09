@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4188eded89992a545a0ee17a3fb13478, type: 3}
+  m_Name: ssd_m2
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.ComponentDefinitionSO
+  id: ssd_m2
+  displayName: Storage Drive (M.2 SSD)
+  category: 3
+  icon: {fileID: 0}
+  mlLabel: ssd
+  mlAliases: []
+  specChips:
+  - M.2 2280
+  - NVMe
+  - 1 TB
+  shortDescription: "Stores the operating system, apps and files \u2014 even when
+    the power is off."
+  whatItDoes: An NVMe SSD stores data in flash memory chips and talks to the CPU
+    over PCIe, which makes it many times faster than a hard drive.
+  keyFacts:
+  - "Plugs straight into the motherboard \u2014 no cables"
+  - Uses the M-key M.2 slot
+  - Held down by a small screw or latch
+  installationSteps:
+  - Remove the M.2 heatsink or screw if present.
+  - "Insert the SSD at about 30\xB0 into the slot."
+  - Press it flat.
+  - Secure with the screw or latch.
+  safetyTip: Don't overtighten the tiny M.2 screw.
+  model3DPrefab: {fileID: 6320624813473873214, guid: 41e5fdf4dea24044dbbd32857a80921b, type: 3}
+  modelRotationEuler: {x: 0, y: 0, z: 180}
+  modelFans: []
+  modelLightBars: []
+  modelPanels: []
+  modelLabels:
+  - title: "Screw notch"
+    description: "Half-moon cut-out held down by the small M.2 screw. Don't overtighten it."
+    kind: 4
+    center: {x: 0.045, y: 0.5, z: 0.6912}
+    facing: {x: 0, y: 0, z: 1}
+  - title: "M-key connector"
+    description: "Gold edge with a notch (the M key) that fits NVMe M.2 slots. Insert it at about 30 degrees."
+    kind: 3
+    center: {x: 0.965, y: 0.7, z: 0.6349}
+    facing: {x: 0, y: 0, z: 1}
+  - title: "Controller"
+    description: "The SSD's processor. It manages where your data is stored."
+    kind: 0
+    center: {x: 0.47, y: 0.5, z: 0.9975}
+    facing: {x: 0, y: 0, z: 1}
+  - title: "NAND flash"
+    description: "Memory chips that keep your files even without power."
+    kind: 0
+    center: {x: 0.76, y: 0.5, z: 0.9074}
+    facing: {x: 0, y: 0, z: 1}
+  connectionPoints: []
+  arLabels:
+  - text: M-key connector
+    positionInBox: {x: 0.03, y: 0.5}
+    description: 
+  - text: Controller
+    positionInBox: {x: 0.35, y: 0.5}
+    description: 
+  - text: NAND flash
+    positionInBox: {x: 0.7, y: 0.5}
+    description: 
+  - text: Screw notch
+    positionInBox: {x: 0.98, y: 0.5}
+    description: 
+  compatibilityRules:
+  - ruleType: 4
+    stringValue: M.2 NVMe
+    intValue: 0
+  quizQuestions:
+  - {fileID: 11400000, guid: bf40be4843316b04d8a428b72eb267e6, type: 2}
+  - {fileID: 11400000, guid: 71c0c9c08a8dfed45aec19200c122009, type: 2}
+  - {fileID: 11400000, guid: ce6feeb3bbefc23419fdf3eca9bb1c73, type: 2}

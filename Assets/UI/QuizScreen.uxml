@@ -1,0 +1,222 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="BuildAR.uss" />
+    <ui:VisualElement name="screen" class="screen quiz-screen">
+
+        <ui:VisualElement class="quiz-top">
+            <ui:Button name="btn-quiz-close" class="icon-btn icon-btn--sm"><BuildAR.UI.LineIcon icon="close" /></ui:Button>
+            <ui:VisualElement class="progress-track quiz-track">
+                <ui:VisualElement name="quiz-fill" class="progress-fill progress-fill--green" />
+            </ui:VisualElement>
+            <ui:VisualElement name="hearts-chip" class="hud-chip hud-chip--heart">
+                <BuildAR.UI.LineIcon icon="heart" />
+                <ui:Label name="hearts-label" text="15" />
+            </ui:VisualElement>
+            <ui:Button name="btn-quiz-settings" class="icon-btn icon-btn--sm quiz-settings-btn"><BuildAR.UI.LineIcon icon="gear" /></ui:Button>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="quiz-hud">
+            <ui:VisualElement class="quiz-tags">
+                <!-- Lesson quiz only: which question of the 20 this is. -->
+                <ui:VisualElement name="tag-count" class="pill pill--navy" style="display: none;">
+                    <BuildAR.UI.LineIcon icon="list" />
+                    <ui:Label name="tag-count-label" text="1 of 20" />
+                </ui:VisualElement>
+                <ui:VisualElement name="tag-format" class="pill pill--blue">
+                    <BuildAR.UI.LineIcon name="tag-format-icon" icon="quiz" />
+                    <ui:Label name="tag-format-label" text="Multiple choice" />
+                </ui:VisualElement>
+                <ui:VisualElement name="tag-forgotten" class="pill pill--orange">
+                    <BuildAR.UI.LineIcon icon="refresh" />
+                    <ui:Label text="Forgotten" />
+                </ui:VisualElement>
+                <ui:VisualElement name="tag-lightning" class="pill pill--lightning">
+                    <BuildAR.UI.LineIcon icon="bolt" />
+                    <ui:Label name="tag-lightning-label" text="10s" />
+                </ui:VisualElement>
+                <ui:VisualElement name="tag-speedrun" class="pill pill--navy">
+                    <BuildAR.UI.LineIcon icon="timer" />
+                    <ui:Label name="tag-speedrun-label" text="2:00" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="xp-counter" class="xp-counter">
+                <BuildAR.UI.LineIcon icon="bolt" />
+                <ui:Label name="xp-label" text="0 XP" class="xp-label" />
+                <ui:Label name="xp-multiplier" text="2x" class="xp-mult" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:ScrollView name="quiz-body" class="scroll quiz-body" vertical-scroller-visibility="Hidden" horizontal-scroller-visibility="Hidden">
+            <ui:VisualElement name="question-card" class="question-card">
+                <ui:Label name="quiz-prompt" text="CHOOSE THE RIGHT ANSWER" class="kicker" />
+                <ui:Label name="quiz-question-text" text="Question" class="quiz-question" />
+                <ui:VisualElement name="lightning-track" class="lightning-track">
+                    <ui:VisualElement name="lightning-fill" class="lightning-fill" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="answer-area" class="answer-area" />
+            <ui:VisualElement name="assist-row" class="assist-row">
+                <ui:Button name="btn-hint" class="assist-btn">
+                    <BuildAR.UI.LineIcon icon="bulb" />
+                    <ui:Label text="Hint" />
+                    <ui:Label name="hint-count" text="3" class="assist-count" />
+                </ui:Button>
+                <ui:Button name="btn-reveal" class="assist-btn">
+                    <BuildAR.UI.LineIcon icon="eye" />
+                    <ui:Label text="Reveal" />
+                    <ui:VisualElement name="reveal-cost" class="assist-cost">
+                        <BuildAR.UI.LineIcon icon="heart" />
+                        <ui:Label text="−1" />
+                    </ui:VisualElement>
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:ScrollView>
+
+        <ui:Label name="xp-pop" text="+10 XP" class="xp-pop" picking-mode="Ignore" />
+
+        <ui:VisualElement name="feedback" class="sheet feedback-sheet sheet--hidden">
+            <ui:VisualElement class="fb-head">
+                <ui:VisualElement class="fb-badge"><BuildAR.UI.LineIcon name="fb-icon" icon="check" /></ui:VisualElement>
+                <ui:VisualElement class="fb-titles">
+                    <ui:Label name="fb-title" text="Nice!" class="fb-title" />
+                    <ui:Label name="fb-sub" text="3 in a row" class="fb-sub" />
+                </ui:VisualElement>
+                <ui:VisualElement name="fb-rewards" class="fb-rewards">
+                    <ui:Label name="fb-xp" text="+18 XP" class="fb-xp" />
+                    <ui:VisualElement name="fb-coin" class="fb-coin">
+                        <BuildAR.UI.LineIcon icon="coin" />
+                        <ui:Label text="+1" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label name="fb-answer" text="" class="fb-answer" />
+            <ui:Label name="fb-explanation" text="" class="fb-explanation" />
+            <ui:Button name="btn-continue" class="btn btn-lg fb-continue">
+                <ui:Label name="btn-continue-label" text="Continue" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="settings" class="overlay" style="display: none;">
+            <ui:VisualElement name="settings-backdrop" class="overlay-backdrop" />
+            <ui:VisualElement name="settings-sheet" class="sheet settings-sheet sheet--hidden">
+                <ui:VisualElement class="sheet-handle" />
+                <ui:Label text="Quiz settings" class="h2" />
+                <ui:Label text="PREFERRED QUESTION STYLE" class="kicker kicker--muted settings-kicker" />
+                <ui:VisualElement name="style-list" />
+                <ui:Label text="MORE SETTINGS" class="kicker kicker--muted settings-kicker" />
+                <ui:VisualElement name="toggle-list" />
+                <ui:Button name="btn-settings-done" class="btn btn-primary settings-done">
+                    <ui:Label text="Done" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="modal" class="modal-backdrop" style="display: none;">
+            <ui:VisualElement class="modal-card quiz-modal">
+                <ui:VisualElement name="modal-icon-box" class="modal-icon"><BuildAR.UI.LineIcon name="modal-icon" icon="heart" /></ui:VisualElement>
+                <ui:Label name="modal-title" text="Title" class="h2" />
+                <ui:Label name="modal-body" text="Body" class="body" />
+                <ui:Label name="modal-timer" text="" class="modal-timer" />
+                <ui:Button name="btn-modal-primary" class="btn btn-primary"><ui:Label name="btn-modal-primary-label" text="OK" /></ui:Button>
+                <ui:Button name="btn-modal-secondary" class="btn btn-secondary"><ui:Label name="btn-modal-secondary-label" text="Cancel" /></ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="summary" class="summary" style="display: none;">
+            <BuildAR.UI.GradientBackground class="brand-gradient--summary" />
+            <ui:ScrollView class="scroll summary-scroll" vertical-scroller-visibility="Hidden" horizontal-scroller-visibility="Hidden">
+                <ui:VisualElement class="summary-art"><BuildAR.UI.LineIcon name="summary-icon" icon="trophy" /></ui:VisualElement>
+                <ui:Label name="summary-title" text="Round complete!" class="summary-title" />
+                <ui:Label name="summary-sub" text="CPU" class="summary-sub" />
+
+                <ui:VisualElement class="summary-badges">
+                    <ui:VisualElement name="sum-xp" class="sum-badge sum-badge--xp">
+                        <BuildAR.UI.LineIcon icon="bolt" />
+                        <ui:Label name="sum-xp-label" text="+0 XP" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="sum-progress" class="sum-badge sum-badge--progress">
+                        <BuildAR.UI.LineIcon icon="layers" />
+                        <ui:Label name="sum-progress-label" text="+0 leveled up" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <ui:VisualElement name="sum-mastery-card" class="summary-card">
+                    <ui:VisualElement class="summary-row">
+                        <ui:Label text="Deck mastery" class="summary-card-title" />
+                        <ui:Label name="sum-mastery" text="0%" class="summary-big" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="progress-track progress-track--dark">
+                        <ui:VisualElement name="sum-mastery-fill" class="progress-fill progress-fill--cyan" />
+                    </ui:VisualElement>
+                    <ui:Label name="sum-mastery-note" text="" class="summary-note" />
+                </ui:VisualElement>
+
+                <ui:VisualElement name="sum-streak-card" class="summary-card">
+                    <ui:VisualElement class="summary-row">
+                        <ui:VisualElement class="summary-streak">
+                            <BuildAR.UI.LineIcon icon="flame" />
+                            <ui:Label name="sum-streak" text="0 day streak" class="summary-card-title" />
+                        </ui:VisualElement>
+                        <ui:Label name="sum-streak-tag" text="Streak extended!" class="pill pill--orange" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="sum-week-host" />
+                    <ui:Label name="sum-streak-note" text="" class="summary-note" />
+                </ui:VisualElement>
+
+                <ui:Button name="btn-see-more" class="link-btn summary-more-btn"><ui:Label name="btn-see-more-label" text="See more" /></ui:Button>
+                <ui:VisualElement name="sum-more" class="summary-card" style="display: none;">
+                    <ui:VisualElement name="sum-stats" class="summary-stats" />
+                    <ui:Label name="sum-review-title" text="Cards to review" class="summary-card-title summary-review-title" />
+                    <ui:VisualElement name="sum-review" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="summary-actions">
+                    <ui:Button name="btn-sum-primary" class="btn btn-lg btn-brand"><ui:Label name="btn-sum-primary-label" text="Keep going" /><BuildAR.UI.LineIcon icon="arrow-right" /></ui:Button>
+                    <ui:VisualElement class="summary-actions-row">
+                        <ui:Button name="btn-sum-secondary" class="btn btn-ghost-dark grow gap-right"><BuildAR.UI.LineIcon name="btn-sum-secondary-icon" icon="timer" /><ui:Label name="btn-sum-secondary-label" text="Speed run" /></ui:Button>
+                        <ui:Button name="btn-sum-done" class="btn btn-ghost-dark grow"><ui:Label text="Done" /></ui:Button>
+                    </ui:VisualElement>
+                    <ui:Label name="sum-hearts-note" text="" class="summary-note summary-hearts-note" />
+                </ui:VisualElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+
+        <!-- Lesson quiz results (QuizScreenController.DisplayTestResults). -->
+        <ui:VisualElement name="test-summary" class="summary" style="display: none;">
+            <BuildAR.UI.GradientBackground class="brand-gradient--summary" />
+            <ui:ScrollView class="scroll summary-scroll" vertical-scroller-visibility="Hidden" horizontal-scroller-visibility="Hidden">
+                <ui:VisualElement class="summary-art"><BuildAR.UI.LineIcon name="test-icon" icon="trophy" /></ui:VisualElement>
+                <ui:Label name="test-title" text="You passed!" class="summary-title" />
+                <ui:Label name="test-sub" text="Lesson" class="summary-sub" />
+
+                <ui:VisualElement class="summary-card">
+                    <ui:VisualElement class="summary-row">
+                        <ui:Label text="Your score" class="summary-card-title" />
+                        <ui:Label name="test-score" text="0 / 20" class="summary-big" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="test-track-wrap">
+                        <ui:VisualElement class="progress-track progress-track--dark">
+                            <ui:VisualElement name="test-fill" class="progress-fill progress-fill--cyan" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="test-pass-mark" class="test-pass-mark" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="summary-row test-score-row">
+                        <ui:Label name="test-percent" text="0%" class="summary-note" />
+                        <ui:Label name="test-xp" text="+0 XP" class="summary-note test-xp" />
+                    </ui:VisualElement>
+                    <ui:Label name="test-note" text="" class="summary-note" />
+                </ui:VisualElement>
+
+                <ui:VisualElement name="test-missed-card" class="summary-card">
+                    <ui:Label name="test-missed-title" text="To review" class="summary-card-title" />
+                    <ui:VisualElement name="test-missed" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="summary-actions">
+                    <ui:Button name="btn-test-primary" class="btn btn-lg btn-brand"><ui:Label name="btn-test-primary-label" text="Back to lesson" /><BuildAR.UI.LineIcon icon="arrow-right" /></ui:Button>
+                    <ui:Button name="btn-test-secondary" class="btn btn-ghost-dark test-secondary"><BuildAR.UI.LineIcon icon="refresh" /><ui:Label name="btn-test-secondary-label" text="Retake quiz" /></ui:Button>
+                </ui:VisualElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

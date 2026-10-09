@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5c81bd7c0110f4787c3c067abde81f, type: 3}
+  m_Name: l08_q12
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.QuizQuestionSO
+  questionType: 1
+  questionText: "The motherboard's form factor, like ATX, must be supported by the case."
+  options: []
+  correctOptionIndex: 0
+  statementIsTrue: 1
+  answer: 
+  acceptedAnswers: []
+  distractors: []
+  pairs: []
+  explanation: "The case's standoffs and rear opening are laid out for certain board sizes."
+  isSafetyQuestion: 0

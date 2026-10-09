@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cedca804eff092449184c3d0b4d5557, type: 3}
+  m_Name: l05_storage
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.LessonSO
+  lessonId: l05_storage
+  title: Storage drives
+  summary: SSDs and hard drives.
+  difficulty: 0
+  estimatedMinutes: 5
+  stage: 0
+  order: 4
+  relatedCategory: 3
+  relatedComponentId: ssd_m2
+  prerequisiteLessonIds:
+  - l01_inside_pc
+  quiz:
+  - {fileID: 11400000, guid: 71c0c9c08a8dfed45aec19200c122009, type: 2}
+  - {fileID: 11400000, guid: ce6feeb3bbefc23419fdf3eca9bb1c73, type: 2}
+  - {fileID: 11400000, guid: e6ec9babe1d84b44785ff6b0747833be, type: 2}
+  - {fileID: 11400000, guid: 4dc0e14883c7dcf44b3066065c452dfe, type: 2}
+  - {fileID: 11400000, guid: 0f9445b16d05ec04fac1735aebd619cc, type: 2}
+  - {fileID: 11400000, guid: e912a70100365f77a1141e41dfce2302, type: 2}
+  - {fileID: 11400000, guid: 9b98ad47fbef56f59609a47ad6490bd3, type: 2}
+  - {fileID: 11400000, guid: 646c9a7c54c45098a55dc46e8c9efbc3, type: 2}
+  - {fileID: 11400000, guid: de42307f6da75248a8bffa8876ee9125, type: 2}
+  - {fileID: 11400000, guid: ceff0f15bdf7532caf1052549e52091a, type: 2}
+  - {fileID: 11400000, guid: 45e224869daf5b0da0e0766659f5271b, type: 2}
+  - {fileID: 11400000, guid: cb70c4c20f725ed7b49c1cfb220c1a92, type: 2}
+  - {fileID: 11400000, guid: 1d9c7a68f0c352fcaad13bd9ef0de679, type: 2}
+  - {fileID: 11400000, guid: fcc47dd9d2455a1a9ecc17f82f325e2c, type: 2}
+  - {fileID: 11400000, guid: c16520d97ac4509bab0a3b7253b8a31b, type: 2}
+  - {fileID: 11400000, guid: c69529972049544581c0ddbe145d64ee, type: 2}
+  - {fileID: 11400000, guid: 8721d6d41bb658c08f535d949457c581, type: 2}
+  - {fileID: 11400000, guid: 70e500a8f9515ee185928cc96eb15275, type: 2}
+  - {fileID: 11400000, guid: d416a8e9116155f8bbf54dacb35178a6, type: 2}
+  - {fileID: 11400000, guid: 28261c1a8ffc557b89f23fcb88cafa53, type: 2}

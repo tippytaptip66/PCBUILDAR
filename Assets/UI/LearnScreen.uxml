@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="BuildAR.uss" />
+    <ui:Template name="BottomNav" src="BottomNav.uxml" />
+
+    <ui:VisualElement name="screen" class="screen">
+        <ui:ScrollView name="scroll" class="scroll" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden">
+            <ui:Label text="Learn" class="eyebrow" style="margin-top: 6px;" />
+            <ui:Label text="Build your knowledge" class="h1" />
+
+            <!-- Filled by LearnScreenController: one chip per ComponentCategory -->
+            <ui:ScrollView name="category-chips" mode="Horizontal" class="cat-scroll" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" />
+
+            <ui:VisualElement class="card path-card">
+                <ui:VisualElement class="section-row">
+                    <ui:Label text="Guided path" class="h3" />
+                    <ui:Label name="path-summary" text="0 of 5 stages" class="small" />
+                </ui:VisualElement>
+                <ui:VisualElement name="path-steps" class="path-steps">
+                    <ui:VisualElement class="path-line" picking-mode="Ignore" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="lesson-list" />
+        </ui:ScrollView>
+        <ui:Instance template="BottomNav" />
+    </ui:VisualElement>
+</ui:UXML>

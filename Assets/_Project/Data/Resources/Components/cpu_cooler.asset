@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4188eded89992a545a0ee17a3fb13478, type: 3}
+  m_Name: cpu_cooler
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.ComponentDefinitionSO
+  id: cpu_cooler
+  displayName: CPU Cooler
+  category: 6
+  icon: {fileID: 0}
+  mlLabel: cooler
+  mlAliases: []
+  specChips:
+  - AM5
+  - 120 mm fan
+  - 4-pin PWM
+  shortDescription: Pulls heat away from the CPU so it doesn't slow down or overheat.
+  whatItDoes: Heat pipes carry heat from the CPU into a stack of metal fins, and
+    a fan blows air through the fins.
+  keyFacts:
+  - Needs thermal paste between it and the CPU
+  - Fan cable goes to the CPU_FAN header
+  - Bracket must match the socket
+  installationSteps:
+  - Fit the AM5 mounting bracket.
+  - Check thermal paste is on the CPU.
+  - Place the cooler and tighten screws diagonally.
+  - Connect the fan to CPU_FAN.
+  safetyTip: Tighten screws a little at a time in a cross pattern for even pressure.
+  model3DPrefab: {fileID: 6239741833812455745, guid: 29f02a263f750e54abab704068016a76, type: 3}
+  modelRotationEuler: {x: 0, y: 180, z: 0}
+  modelFans:
+  - center: {x: 0.4989, y: 0.0215, z: 0.5963}
+    facing: {x: 0, y: -1, z: 0}
+    radius: 0.3453
+    depth: 0.205
+    inset: 0
+    frame: 0
+    blades: 9
+    rpm: 150
+    rgbRing: 1
+  modelLightBars: []
+  modelPanels: []
+  modelLabels:
+  - title: "Fan + 4-pin cable"
+    description: "Plug the fan cable into CPU_FAN on the motherboard."
+    kind: 6
+    center: {x: 0.5, y: 0.092, z: 0.6}
+    facing: {x: 0, y: -1, z: 0}
+  - title: "Fin stack"
+    description: "Thin aluminum fins. Heat spreads into them and the fan's air carries it away."
+    kind: 0
+    center: {x: 0.5, y: 0.9417, z: 0.65}
+    facing: {x: 0, y: 1, z: 0}
+  - title: "Heat pipes"
+    description: "Copper pipes move heat from the base up into the fins."
+    kind: 0
+    center: {x: 0.967, y: 0.06, z: 0.65}
+    facing: {x: 1, y: 0, z: 0}
+  - title: "Contact plate"
+    description: "Sits on the CPU with a thin layer of thermal paste in between."
+    kind: 2
+    center: {x: 0.5, y: 0.55, z: 0.0001}
+    facing: {x: 0, y: 0, z: -1}
+  - title: "Mounting bracket"
+    description: "Screws into the socket's backplate. Tighten diagonally, a little at a time."
+    kind: 4
+    center: {x: 0.21, y: 0.9, z: 0.0161}
+    facing: {x: 0, y: 0, z: -1}
+  connectionPoints: []
+  arLabels:
+  - text: Fin stack
+    positionInBox: {x: 0.5, y: 0.35}
+    description: 
+  - text: Fan
+    positionInBox: {x: 0.15, y: 0.5}
+    description: 
+  - text: Heat pipes
+    positionInBox: {x: 0.5, y: 0.85}
+    description: 
+  - text: Mounting bracket
+    positionInBox: {x: 0.9, y: 0.95}
+    description: 
+  compatibilityRules:
+  - ruleType: 0
+    stringValue: AM5
+    intValue: 0
+  quizQuestions:
+  - {fileID: 11400000, guid: 21524f7283290fa48a16b349b242fb09, type: 2}
+  - {fileID: 11400000, guid: 668786de88e8c334cb14f2eef1f74a78, type: 2}
+  - {fileID: 11400000, guid: c17a1e7c3a91e084184fd99254f6b773, type: 2}

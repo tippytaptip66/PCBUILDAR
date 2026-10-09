@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5c81bd7c0110f4787c3c067abde81f, type: 3}
+  m_Name: l02_q11
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.QuizQuestionSO
+  questionType: 0
+  questionText: "What do you do before lowering the CPU into the socket?"
+  options:
+  - "Lift the socket's retention lever"
+  - "Put thermal paste in the socket"
+  - "Install the cooler"
+  - "Plug in the power"
+  correctOptionIndex: 0
+  statementIsTrue: 0
+  answer: 
+  acceptedAnswers: []
+  distractors: []
+  pairs: []
+  explanation: "The lever opens the socket. You close it again to lock the CPU in."
+  isSafetyQuestion: 0

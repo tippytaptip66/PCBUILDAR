@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cedca804eff092449184c3d0b4d5557, type: 3}
+  m_Name: l04_motherboard
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.LessonSO
+  lessonId: l04_motherboard
+  title: Motherboard tour
+  summary: Sockets, slots and headers.
+  difficulty: 0
+  estimatedMinutes: 8
+  stage: 0
+  order: 3
+  relatedCategory: 1
+  relatedComponentId: motherboard
+  prerequisiteLessonIds:
+  - l01_inside_pc
+  quiz:
+  - {fileID: 11400000, guid: 3b626101f9557b847b062549a1a53504, type: 2}
+  - {fileID: 11400000, guid: cd7eec9feac50b64abf78d11e5959296, type: 2}
+  - {fileID: 11400000, guid: e71f0141abbbf664b80411127a2fc596, type: 2}
+  - {fileID: 11400000, guid: abbb8e30c0b75fa59b6760244018e6b1, type: 2}
+  - {fileID: 11400000, guid: 0755925f8c1158aa9311d6533e1306fb, type: 2}
+  - {fileID: 11400000, guid: 6ddeba00604b50e98b3dec2d8502188e, type: 2}
+  - {fileID: 11400000, guid: 51dcd6b0b31654afb625e84b449b5aa9, type: 2}
+  - {fileID: 11400000, guid: 0f929dec4b5756538ac2c989ff36aa7e, type: 2}
+  - {fileID: 11400000, guid: b42c1c2b4b975abea35471afc45da19b, type: 2}
+  - {fileID: 11400000, guid: f5993609e8ea5330b7a0eb80fe43d706, type: 2}
+  - {fileID: 11400000, guid: 671b84f95b4a5e76b33914ffbea8d489, type: 2}
+  - {fileID: 11400000, guid: 2f9852248f185118a0c9e667fcc06089, type: 2}
+  - {fileID: 11400000, guid: 4083ce2dfa96546c8175e0595340bc88, type: 2}
+  - {fileID: 11400000, guid: 79359ac895175df0877b5b27a308931f, type: 2}
+  - {fileID: 11400000, guid: a511f0e2fbd35ceeb324b709c004941a, type: 2}
+  - {fileID: 11400000, guid: 708898b64714559caf0de82e317fe6d7, type: 2}
+  - {fileID: 11400000, guid: d801505a8a6f5b3d824276804d651d24, type: 2}
+  - {fileID: 11400000, guid: fc2b5935f2cc501da2b59761d31dca52, type: 2}
+  - {fileID: 11400000, guid: 7fc9d76832155a94a4b8fb4773e89e91, type: 2}
+  - {fileID: 11400000, guid: d28a23e7c41d542c8286f40c1328e035, type: 2}

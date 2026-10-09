@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4188eded89992a545a0ee17a3fb13478, type: 3}
+  m_Name: cpu
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.ComponentDefinitionSO
+  id: cpu
+  displayName: Processor (CPU)
+  category: 0
+  icon: {fileID: 0}
+  mlLabel: cpu
+  mlAliases: []
+  specChips:
+  - AM5
+  - 6 cores
+  - DDR5
+  - 65 W
+  shortDescription: The brain of the computer. It runs program instructions and does
+    the calculations.
+  whatItDoes: 'The CPU (Central Processing Unit) repeats a simple cycle billions
+    of times a second: fetch an instruction from memory, decode it, execute it, and
+    store the result.'
+  keyFacts:
+  - Fits in an AM5 socket on the motherboard
+  - 6 cores / 12 threads
+  - Needs a cooler and thermal paste
+  - Works with DDR5 memory only
+  installationSteps:
+  - Lift the socket's retention lever.
+  - Line up the gold triangle with the triangle on the socket.
+  - "Lower the CPU straight down \u2014 never push."
+  - Close the lever to lock it in.
+  safetyTip: Hold the CPU by its edges and never touch the contacts underneath.
+  model3DPrefab: {fileID: 8792363186054267891, guid: 8d38034e067075c4090d38ae9b4a8745, type: 3}
+  modelRotationEuler: {x: 0, y: 0, z: 180}
+  modelFans: []
+  modelLightBars: []
+  modelPanels: []
+  modelLabels:
+  - title: "Heat spreader"
+    description: "Metal lid (IHS) that carries heat from the chip to the cooler. Thermal paste goes here."
+    kind: 2
+    center: {x: 0.5, y: 0.5, z: 0.9905}
+    facing: {x: 0, y: 0, z: 1}
+  - title: "Capacitors"
+    description: "Tiny parts around the lid. AM5 CPUs have them on top, so keep thermal paste off them."
+    kind: 0
+    center: {x: 0.27, y: 0.055, z: 0.3516}
+    facing: {x: 0, y: 0, z: 1}
+  - title: "Substrate"
+    description: "The green circuit board the chip sits on. Hold the CPU by these edges."
+    kind: 0
+    center: {x: 0.05, y: 0.5, z: 0.5025}
+    facing: {x: 0, y: 0, z: 1}
+  - title: "Contact pads"
+    description: "Hundreds of gold contacts underneath connect the CPU to the socket. Never touch them."
+    kind: 1
+    center: {x: 0.5, y: 0.5, z: 0.0148}
+    facing: {x: 0, y: 0, z: -1}
+  connectionPoints: []
+  arLabels:
+  - text: Heat spreader
+    positionInBox: {x: 0.5, y: 0.45}
+    description: 
+  - text: Pin 1 triangle
+    positionInBox: {x: 0.1, y: 0.88}
+    description: 
+  - text: Substrate
+    positionInBox: {x: 0.9, y: 0.9}
+    description: 
+  compatibilityRules:
+  - ruleType: 0
+    stringValue: AM5
+    intValue: 0
+  - ruleType: 1
+    stringValue: DDR5
+    intValue: 0
+  quizQuestions:
+  - {fileID: 11400000, guid: 5680420dea5938846bb6978446471158, type: 2}
+  - {fileID: 11400000, guid: 031bff0eb0a1fd0478f05a9c38c38f1f, type: 2}
+  - {fileID: 11400000, guid: c69e9a55e78677a4cbb35185c2b429bd, type: 2}
+  - {fileID: 11400000, guid: 054ba6311392c564c86fb862a321673c, type: 2}

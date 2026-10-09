@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5c81bd7c0110f4787c3c067abde81f, type: 3}
+  m_Name: psu_1
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.QuizQuestionSO
+  questionType: 0
+  questionText: You're about to open the case. What should you do first?
+  options:
+  - Leave it plugged in so it stays grounded
+  - Switch off and unplug the PC
+  - Remove the CPU cooler
+  - Tap the parts to check for static
+  correctOptionIndex: 1
+  statementIsTrue: 0
+  answer: 
+  acceptedAnswers: []
+  distractors: []
+  pairs: []
+  explanation: Switch the PSU off and unplug the power cable before touching anything
+    inside.
+  isSafetyQuestion: 1

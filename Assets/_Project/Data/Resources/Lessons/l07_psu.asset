@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cedca804eff092449184c3d0b4d5557, type: 3}
+  m_Name: l07_psu
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.LessonSO
+  lessonId: l07_psu
+  title: Power supplies
+  summary: Where power comes from.
+  difficulty: 0
+  estimatedMinutes: 5
+  stage: 0
+  order: 6
+  relatedCategory: 5
+  relatedComponentId: psu
+  prerequisiteLessonIds:
+  - l01_inside_pc
+  quiz:
+  - {fileID: 11400000, guid: c99bc59c7a784644eb80ee7f93c0569e, type: 2}
+  - {fileID: 11400000, guid: f300fdb3d8b77f440b38c1e0c16b76c7, type: 2}
+  - {fileID: 11400000, guid: 2771ca1537a23b447ba5ce290ad74203, type: 2}
+  - {fileID: 11400000, guid: 8edc4ceca8db5cccb6dc6680c6d9ecde, type: 2}
+  - {fileID: 11400000, guid: 322f2ce167ad5ceb8a9b90001cfbdfbc, type: 2}
+  - {fileID: 11400000, guid: 7dfabf9e6bbf5a6eb32ed268c2fbd853, type: 2}
+  - {fileID: 11400000, guid: dc20fb3defd350cfa6a8c1d7438041ff, type: 2}
+  - {fileID: 11400000, guid: d53d07e807b2538d8c44a491a69af208, type: 2}
+  - {fileID: 11400000, guid: 5fad42bdf06f5d7187523745b3853e80, type: 2}
+  - {fileID: 11400000, guid: efc47bc6e2955c2fa2406f71d7ed26fc, type: 2}
+  - {fileID: 11400000, guid: f9e6e1013e4c5974921d6b4973a5aaba, type: 2}
+  - {fileID: 11400000, guid: 49af78ee490f545b8b38f7e90546bc6d, type: 2}
+  - {fileID: 11400000, guid: 9db57475b12558378a950ea5bbcf338e, type: 2}
+  - {fileID: 11400000, guid: 43da8f54940f582393a9fff6e2a32126, type: 2}
+  - {fileID: 11400000, guid: 79d52fef89b75dbeb10a6947baa7357e, type: 2}
+  - {fileID: 11400000, guid: 38c0f3feb98850978476165a1f143068, type: 2}
+  - {fileID: 11400000, guid: 9c0ad05c21fd5e80bb763ee7d8f3e2ab, type: 2}
+  - {fileID: 11400000, guid: ad03e1a32c065c13b003b7f14baf5330, type: 2}
+  - {fileID: 11400000, guid: 91be7ba48abd54b7962dc5adb54617dd, type: 2}
+  - {fileID: 11400000, guid: f439999d2bdf5de2b682bda56a415f81, type: 2}

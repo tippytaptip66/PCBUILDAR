@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cedca804eff092449184c3d0b4d5557, type: 3}
+  m_Name: l02_cpu
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.LessonSO
+  lessonId: l02_cpu
+  title: 'The CPU: the brain'
+  summary: What a processor does.
+  difficulty: 0
+  estimatedMinutes: 6
+  stage: 0
+  order: 1
+  relatedCategory: 0
+  relatedComponentId: cpu
+  prerequisiteLessonIds:
+  - l01_inside_pc
+  quiz:
+  - {fileID: 11400000, guid: 031bff0eb0a1fd0478f05a9c38c38f1f, type: 2}
+  - {fileID: 11400000, guid: 054ba6311392c564c86fb862a321673c, type: 2}
+  - {fileID: 11400000, guid: 372315b0925a577399cf809a6c82070c, type: 2}
+  - {fileID: 11400000, guid: b96d8fa07d98530ebc42a95ffcaea86c, type: 2}
+  - {fileID: 11400000, guid: 402a252360f8576ea5ac339c4bc05ea2, type: 2}
+  - {fileID: 11400000, guid: c1dc4fcf9e61543897ef4b4c291c1313, type: 2}
+  - {fileID: 11400000, guid: 9ae3d50b02f75cb2afbddde840cf6296, type: 2}
+  - {fileID: 11400000, guid: 984de49933785cffb8ee13381b7c4c7b, type: 2}
+  - {fileID: 11400000, guid: eccc7e88843d50f3aba519c1a6944cee, type: 2}
+  - {fileID: 11400000, guid: bba64d7f73805296972c12e7b26fe511, type: 2}
+  - {fileID: 11400000, guid: 015c4dbc42ea5fe3860a09e26ff7f548, type: 2}
+  - {fileID: 11400000, guid: 10263b9d30dc58f4a2b33721935cddfa, type: 2}
+  - {fileID: 11400000, guid: 3fdf32688f165715b13e1e03a2076f33, type: 2}
+  - {fileID: 11400000, guid: b98792c0050d5a13875f986392689681, type: 2}
+  - {fileID: 11400000, guid: c3d7e5bd91e15fbcad9a7d345071e7a0, type: 2}
+  - {fileID: 11400000, guid: 594ac33f436e5cbaa8f211522c9f7802, type: 2}
+  - {fileID: 11400000, guid: ee96fa2c25f4557a9f6799c643092277, type: 2}
+  - {fileID: 11400000, guid: b47b9475629a5f19bb951f2e3bc49c83, type: 2}
+  - {fileID: 11400000, guid: d3528c857e9656ab96c7c6dd2c6281a4, type: 2}
+  - {fileID: 11400000, guid: 4facc3a2d0dc58adb31e04fac50d4b90, type: 2}

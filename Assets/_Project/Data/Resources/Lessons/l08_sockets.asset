@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cedca804eff092449184c3d0b4d5557, type: 3}
+  m_Name: l08_sockets
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.LessonSO
+  lessonId: l08_sockets
+  title: Sockets & memory types
+  summary: Matching CPU, board and RAM.
+  difficulty: 1
+  estimatedMinutes: 7
+  stage: 1
+  order: 0
+  relatedCategory: 0
+  relatedComponentId: cpu
+  prerequisiteLessonIds:
+  - l02_cpu
+  - l03_ram
+  quiz:
+  - {fileID: 11400000, guid: 35a66479184d5dd8b4ca3ac44cbe9fe0, type: 2}
+  - {fileID: 11400000, guid: ab9696bedbfd58bfb5e4154786998fce, type: 2}
+  - {fileID: 11400000, guid: 21e91dc48b965514ac0df3e214d58afc, type: 2}
+  - {fileID: 11400000, guid: 83714603e582564fbe6c39124af0f0c3, type: 2}
+  - {fileID: 11400000, guid: edb7f70f2103529bb57ff5fa917e0b66, type: 2}
+  - {fileID: 11400000, guid: 0f15a258d9df542b99fef3827988c232, type: 2}
+  - {fileID: 11400000, guid: d1a0c1cf36b7588eaa5e0effb6e612de, type: 2}
+  - {fileID: 11400000, guid: 5838f81759cb517baa195094314c61bf, type: 2}
+  - {fileID: 11400000, guid: 1aa3d35299a95818b686850f9aef3267, type: 2}
+  - {fileID: 11400000, guid: 77c0d4b140bb58ee82a9da0a9f2b9ff6, type: 2}
+  - {fileID: 11400000, guid: c797087c0ca15e258d9b7a138dccf535, type: 2}
+  - {fileID: 11400000, guid: 72d8655162f256909f1e065acaa7e173, type: 2}
+  - {fileID: 11400000, guid: 46cf6a276f8657b7976e48e81f1404b6, type: 2}
+  - {fileID: 11400000, guid: 732b793b1a8451a894f322a89c4a4844, type: 2}
+  - {fileID: 11400000, guid: c3adbafb982e532eb77ddd613769e0c3, type: 2}
+  - {fileID: 11400000, guid: 4de1bc6c620453209e3227c8a8988030, type: 2}
+  - {fileID: 11400000, guid: d79c6084e4e259a5b42264a3f7304169, type: 2}
+  - {fileID: 11400000, guid: d2f90d85673d532fb4f27f932bd9301d, type: 2}
+  - {fileID: 11400000, guid: 7ee4005361dd53e8bfc366e662d77378, type: 2}
+  - {fileID: 11400000, guid: 631369b2bacc56efb821185165ffdf69, type: 2}

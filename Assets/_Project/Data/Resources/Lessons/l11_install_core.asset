@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cedca804eff092449184c3d0b4d5557, type: 3}
+  m_Name: l11_install_core
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.LessonSO
+  lessonId: l11_install_core
+  title: Install CPU, cooler & RAM
+  summary: The core install.
+  difficulty: 1
+  estimatedMinutes: 10
+  stage: 3
+  order: 0
+  relatedCategory: 6
+  relatedComponentId: cpu_cooler
+  prerequisiteLessonIds:
+  - l10_workspace
+  quiz:
+  - {fileID: 11400000, guid: 21524f7283290fa48a16b349b242fb09, type: 2}
+  - {fileID: 11400000, guid: c17a1e7c3a91e084184fd99254f6b773, type: 2}
+  - {fileID: 11400000, guid: 3271f8fdf42d51b6be069cc2911472c4, type: 2}
+  - {fileID: 11400000, guid: 022d16c1605e592a98f6a678bf10bfd0, type: 2}
+  - {fileID: 11400000, guid: 1a7dfd7f94125c03966d838e60b16b5f, type: 2}
+  - {fileID: 11400000, guid: 3e9d51befa4557a3a685d358abfcf93e, type: 2}
+  - {fileID: 11400000, guid: e6bdfc0f3a5f5844aaef74da4df4fd09, type: 2}
+  - {fileID: 11400000, guid: 830defe7598f5f2f94ca36fd7479dc5d, type: 2}
+  - {fileID: 11400000, guid: a7b3dfae2d0151ab8d4f693f0c9811f3, type: 2}
+  - {fileID: 11400000, guid: a33e7d1577325dc99e660805d70892ff, type: 2}
+  - {fileID: 11400000, guid: 84f8054eefbe57c1bbc147ccbf952826, type: 2}
+  - {fileID: 11400000, guid: 8e8b9c6609835f5bb72b7cdbe1b66a24, type: 2}
+  - {fileID: 11400000, guid: 33bf43f5a46e55f4a4b79c0cf13a09b5, type: 2}
+  - {fileID: 11400000, guid: 3d5ce8c7e4b85ac19ba8bf7cb586552b, type: 2}
+  - {fileID: 11400000, guid: 601635ddd6eb5317bf2ffbdc39610f65, type: 2}
+  - {fileID: 11400000, guid: d3724cc777885d17bbdedbb962ce72b7, type: 2}
+  - {fileID: 11400000, guid: 630fcc8cb7735cf3a2c6ead3cabd8a9c, type: 2}
+  - {fileID: 11400000, guid: 62419ae7f77b51c1b674d055e6e1cf2a, type: 2}
+  - {fileID: 11400000, guid: 59a4e8dd54fc517a8c848dd99b5c0e0e, type: 2}
+  - {fileID: 11400000, guid: 9d947333b21f5ad3a900342808971d12, type: 2}

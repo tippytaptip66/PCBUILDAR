@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5c81bd7c0110f4787c3c067abde81f, type: 3}
+  m_Name: l09_q19
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.QuizQuestionSO
+  questionType: 0
+  questionText: "Your new graphics card needs a 750 W PSU but you have 700 W. What should you do?"
+  options:
+  - "Upgrade the PSU too"
+  - "Nothing"
+  - "Add more case fans"
+  - "Remove a RAM stick"
+  correctOptionIndex: 0
+  statementIsTrue: 0
+  answer: 
+  acceptedAnswers: []
+  distractors: []
+  pairs: []
+  explanation: "Follow the card maker's recommendation, or the PC may be unstable under load."
+  isSafetyQuestion: 0

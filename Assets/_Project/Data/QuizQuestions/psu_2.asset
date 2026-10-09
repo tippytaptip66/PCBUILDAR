@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5c81bd7c0110f4787c3c067abde81f, type: 3}
+  m_Name: psu_2
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.QuizQuestionSO
+  questionType: 2
+  questionText: A power supply turns AC wall power into ___ power for the components.
+  options: []
+  correctOptionIndex: 0
+  statementIsTrue: 0
+  answer: DC
+  acceptedAnswers:
+  - direct current
+  distractors:
+  - AC
+  - RF
+  - USB
+  pairs: []
+  explanation: 'Components run on DC: 12 V, 5 V and 3.3 V.'
+  isSafetyQuestion: 0

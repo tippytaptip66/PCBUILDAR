@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5c81bd7c0110f4787c3c067abde81f, type: 3}
+  m_Name: l05_q17
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.QuizQuestionSO
+  questionType: 3
+  questionText: "Match each drive to how it connects or works."
+  options: []
+  correctOptionIndex: 0
+  statementIsTrue: 0
+  answer: 
+  acceptedAnswers: []
+  distractors: []
+  pairs:
+  - left: "M.2 NVMe SSD"
+    right: "Plugs straight into the motherboard"
+  - left: "SATA SSD"
+    right: "Needs SATA power and data cables"
+  - left: "Hard drive (HDD)"
+    right: "Spinning disks, the slowest"
+  explanation: "All three keep files without power, but they differ a lot in speed and fitting."
+  isSafetyQuestion: 0

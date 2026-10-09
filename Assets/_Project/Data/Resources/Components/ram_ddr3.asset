@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4188eded89992a545a0ee17a3fb13478, type: 3}
+  m_Name: ram_ddr3
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.ComponentDefinitionSO
+  id: ram_ddr3
+  displayName: Memory (DDR3 RAM)
+  category: 2
+  icon: {fileID: 0}
+  mlLabel:
+  mlAliases: []
+  specChips:
+  - DDR3
+  - 8 GB
+  - 1600 MT/s
+  shortDescription: Older memory, from before DDR4. Shown to practice spotting incompatible
+    parts.
+  whatItDoes: DDR3 was the standard desktop memory before DDR4. It is slower, runs
+    at a higher voltage, has fewer pins and its notch sits in another place again,
+    so it only fits DDR3 motherboards.
+  keyFacts:
+  - Only fits DDR3 motherboards
+  - Not compatible with DDR4 or DDR5 boards
+  - 240 pins (DDR4 and DDR5 have 288)
+  - Runs at 1.5 V (DDR4 1.2 V, DDR5 1.1 V)
+  installationSteps: []
+  safetyTip:
+  model3DPrefab: {fileID: 2975215661676377437, guid: 60e707c834149d34a88ba58b7c0e4187, type: 3}
+  modelRotationEuler: {x: 0, y: 0, z: 180}
+  modelFans: []
+  modelLightBars: []
+  modelPanels: []
+  connectionPoints: []
+  arLabels: []
+  compatibilityRules:
+  - ruleType: 1
+    stringValue: DDR3
+    intValue: 0
+  quizQuestions: []

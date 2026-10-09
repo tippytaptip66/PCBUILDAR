@@ -1,0 +1,31 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <!-- Shared bottom bar. Included by screens via <ui:Instance template="BottomNav" />; wired by UIUtil.BindBottomNav.
+         The safe-inset strip is sized to the gesture bar by UIUtil.ApplySafeArea. -->
+    <ui:VisualElement name="bottom-nav" class="bottom-nav">
+        <ui:VisualElement class="nav-row">
+            <ui:Button name="nav-home" class="nav-item">
+                <BuildAR.UI.LineIcon icon="home" class="nav-icon" />
+                <ui:Label text="Home" class="nav-label" />
+            </ui:Button>
+            <ui:Button name="nav-learn" class="nav-item">
+                <BuildAR.UI.LineIcon icon="book" class="nav-icon" />
+                <ui:Label text="Learn" class="nav-label" />
+            </ui:Button>
+            <ui:VisualElement class="nav-fab-slot" picking-mode="Ignore">
+                <ui:Button name="nav-fab" class="fab">
+                    <ui:VisualElement class="fab-glow" picking-mode="Ignore" />
+                    <BuildAR.UI.LineIcon icon="scan" class="fab-icon" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:Button name="nav-assembly" class="nav-item">
+                <BuildAR.UI.LineIcon icon="cube" class="nav-icon" />
+                <ui:Label text="Practice" class="nav-label" />
+            </ui:Button>
+            <ui:Button name="nav-progress" class="nav-item">
+                <BuildAR.UI.LineIcon icon="chart" class="nav-icon" />
+                <ui:Label text="My Progress" class="nav-label" />
+            </ui:Button>
+        </ui:VisualElement>
+        <ui:VisualElement name="nav-inset" class="safe-inset" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>

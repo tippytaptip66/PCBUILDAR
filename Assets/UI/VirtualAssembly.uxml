@@ -1,0 +1,88 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="BuildAR.uss" />
+    <!-- Transparent screen: the 3D case camera renders full screen behind these floating panels. -->
+    <ui:VisualElement name="screen" class="screen screen--asm" picking-mode="Ignore">
+
+        <ui:VisualElement name="asm-topbar" class="asm-topbar">
+            <ui:VisualElement class="asm-header">
+                <ui:Button name="btn-back" class="icon-btn icon-btn--sm"><BuildAR.UI.LineIcon icon="chevron-left" /></ui:Button>
+                <ui:VisualElement class="asm-titles">
+                    <ui:Label text="Practice Assembly" class="asm-title" />
+                    <ui:Label name="step-count" text="Step 1 of 10" class="asm-sub" />
+                </ui:VisualElement>
+                <ui:Button name="btn-pause" class="icon-btn icon-btn--sm"><BuildAR.UI.LineIcon icon="pause" /></ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement class="progress-track asm-progress">
+                <ui:VisualElement name="step-fill" class="progress-fill progress-fill--blue" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- The free area between the top bar and the instruction card; the 3D view is centred in it. -->
+        <ui:VisualElement name="asm-viewport" class="asm-stage" picking-mode="Ignore">
+            <ui:VisualElement name="view-hint" class="asm-view-hint" picking-mode="Ignore">
+                <BuildAR.UI.LineIcon icon="hand" />
+                <ui:Label name="view-hint-label" text="Drag a part onto the glowing slot" />
+            </ui:VisualElement>
+            <ui:VisualElement name="asm-tray" class="asm-tray">
+                <ui:Label text="PARTS" class="tray-title" />
+                <ui:VisualElement name="tray" />
+            </ui:VisualElement>
+            <ui:VisualElement name="asm-view-tools" class="asm-view-tools">
+                <ui:Button name="btn-rotate-left" class="icon-btn icon-btn--sm icon-btn--glass"><BuildAR.UI.LineIcon icon="rotate-left" /></ui:Button>
+                <ui:Button name="btn-rotate-right" class="icon-btn icon-btn--sm icon-btn--glass"><BuildAR.UI.LineIcon icon="rotate-right" /></ui:Button>
+                <ui:Button name="btn-reset-view" class="icon-btn icon-btn--sm icon-btn--glass"><BuildAR.UI.LineIcon icon="refresh" /></ui:Button>
+                <ui:Button name="btn-move-case" class="icon-btn icon-btn--sm icon-btn--glass" style="display: none;"><BuildAR.UI.LineIcon icon="scan" /></ui:Button>
+            </ui:VisualElement>
+
+            <!-- AR: scan for a table, then place the case. -->
+            <ui:VisualElement name="ar-panel" class="ar-place-card" style="display: none;">
+                <ui:VisualElement class="ar-place-icon"><BuildAR.UI.LineIcon name="ar-panel-icon" icon="scan" /></ui:VisualElement>
+                <ui:Label name="ar-panel-title" text="Find a table" class="ar-place-title" />
+                <ui:Label name="ar-panel-body" text="Move your phone slowly over a flat surface." class="ar-place-body" />
+                <ui:Button name="btn-place-case" class="btn btn-primary btn-lg icon-first" style="display: none;">
+                    <BuildAR.UI.LineIcon icon="cube" />
+                    <ui:Label text="Place case here" />
+                </ui:Button>
+                <ui:Button name="btn-use-3d" class="link-btn ar-place-link"><ui:Label text="Use 3D view instead" /></ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="instruction" class="instruction">
+            <ui:VisualElement class="instruction-top">
+                <ui:Label name="instruction-kicker" text="STEP 1 · INSTALL" class="kicker" />
+                <ui:VisualElement name="step-kind" class="pill pill--blue">
+                    <BuildAR.UI.LineIcon name="step-kind-icon" icon="hand" />
+                    <ui:Label name="step-kind-label" text="Drag &amp; drop" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label name="instruction-title" text="Install the power supply" class="instruction-title" />
+            <ui:Label name="instruction-text" text="Drag the PSU into the bay at the bottom of the case." class="instruction-text" />
+            <ui:VisualElement class="feedback">
+                <BuildAR.UI.LineIcon name="feedback-icon" icon="check-circle" />
+                <ui:Label name="feedback-text" text="Installed correctly." class="feedback-text" />
+            </ui:VisualElement>
+            <ui:VisualElement class="instruction-actions">
+                <ui:Button name="btn-hint" class="btn btn-secondary btn-sm grow gap-right">
+                    <ui:Label name="btn-hint-label" text="Show me" />
+                </ui:Button>
+                <ui:Button name="btn-safety" class="btn btn-secondary btn-sm grow">
+                    <BuildAR.UI.LineIcon icon="shield" style="margin-left: 0; margin-right: 6px;" class="icon-orange" />
+                    <ui:Label text="Safety tip" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="modal" class="modal-backdrop" style="display: none;">
+            <ui:VisualElement class="modal-card">
+                <ui:VisualElement name="modal-icon-box" class="action-icon action-icon--blue">
+                    <BuildAR.UI.LineIcon name="modal-icon" icon="pause" />
+                </ui:VisualElement>
+                <ui:Label name="modal-title" text="Paused" class="h2" />
+                <ui:Label name="modal-body" text="Your progress is saved after every step." class="body" />
+                <ui:Button name="btn-modal-primary" class="btn btn-primary"><ui:Label name="btn-modal-primary-label" text="Resume" /></ui:Button>
+                <ui:Button name="btn-modal-secondary" class="btn btn-secondary"><ui:Label name="btn-modal-secondary-label" text="Restart build" /></ui:Button>
+                <ui:Button name="btn-modal-exit" class="btn btn-secondary"><ui:Label text="Exit to Home" /></ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

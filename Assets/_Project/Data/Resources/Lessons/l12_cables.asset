@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cedca804eff092449184c3d0b4d5557, type: 3}
+  m_Name: l12_cables
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.LessonSO
+  lessonId: l12_cables
+  title: Cables & front-panel connectors
+  summary: Power and header cables.
+  difficulty: 1
+  estimatedMinutes: 8
+  stage: 3
+  order: 1
+  relatedCategory: 8
+  relatedComponentId: cable_24pin
+  prerequisiteLessonIds:
+  - l11_install_core
+  quiz:
+  - {fileID: 11400000, guid: 9452ab265baace04fa481b5dd4d5185c, type: 2}
+  - {fileID: 11400000, guid: 77a0d5e3908c58a4e9e7690f91c662c2, type: 2}
+  - {fileID: 11400000, guid: 2da3920cb47a5959b066b80ea1e46084, type: 2}
+  - {fileID: 11400000, guid: 0c14771cfd0853a691b912f83b05c96e, type: 2}
+  - {fileID: 11400000, guid: 2b858a52a3f45bd885870f292013e838, type: 2}
+  - {fileID: 11400000, guid: 0b0b38cd4b6e53a4b455ce74c872247f, type: 2}
+  - {fileID: 11400000, guid: f965180510f05c5b9af6000c20afe831, type: 2}
+  - {fileID: 11400000, guid: b726b298815d5ef7893d570e8272d3af, type: 2}
+  - {fileID: 11400000, guid: 8f1292f78f9050339a2b8436177061f3, type: 2}
+  - {fileID: 11400000, guid: 5cc803596c705b3689d88e595a67a6cf, type: 2}
+  - {fileID: 11400000, guid: 93eb531f4d6d5c9b811c3ad1bf5e0f30, type: 2}
+  - {fileID: 11400000, guid: b734df71b19c52d190d42d0ed0beea1f, type: 2}
+  - {fileID: 11400000, guid: e6727b51bc915130a2bcf149e8efc835, type: 2}
+  - {fileID: 11400000, guid: 40e24eb252f557daa1f6f1afaa2b24d2, type: 2}
+  - {fileID: 11400000, guid: 05b948815abc52f38eeefd08fb51ffc0, type: 2}
+  - {fileID: 11400000, guid: a6fb06004b415bfc81d4fc1ca4ce18b1, type: 2}
+  - {fileID: 11400000, guid: fd1e05891f1f53d9925e7d29dcb2d45e, type: 2}
+  - {fileID: 11400000, guid: 0c8a25e9871057adba70cd2e2f0c14c6, type: 2}
+  - {fileID: 11400000, guid: 052d3955cb605feb8cf9669cdb408405, type: 2}
+  - {fileID: 11400000, guid: 9b80cc6683535b39bddccc58438d0384, type: 2}

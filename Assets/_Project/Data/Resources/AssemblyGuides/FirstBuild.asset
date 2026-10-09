@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0715d8437f2208e4bad4dd8f352ccce9, type: 3}
+  m_Name: FirstBuild
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.AssemblyGuideSO
+  guideId: first_build
+  title: Your first build
+  steps:
+  - stepId: s01_psu
+    title: Install the power supply
+    instruction: Drag the PSU into the bay at the bottom of the case, fan facing
+      down.
+    kind: 0
+    componentId: psu
+    validSlotIds: []
+    connectorType: 
+    safetyTip: Make sure the PSU switch is at O (off) and the wall cable is unplugged.
+    badgeOnComplete: 
+  - stepId: s02_cpu
+    title: Seat the CPU
+    instruction: Drag the CPU onto the socket. The gold triangle must match the socket
+      marker.
+    kind: 0
+    componentId: cpu
+    validSlotIds: []
+    connectorType: 
+    safetyTip: Hold the CPU by its edges. Never touch the contacts or the socket
+      pins.
+    badgeOnComplete: 
+  - stepId: s03_cooler
+    title: Mount the CPU cooler
+    instruction: Drag the cooler onto the CPU. Thermal paste is already applied.
+    kind: 0
+    componentId: cpu_cooler
+    validSlotIds: []
+    connectorType: 
+    safetyTip: Tighten cooler screws a little at a time in a cross pattern.
+    badgeOnComplete: 
+  - stepId: s04_ram_1
+    title: Install the first RAM stick
+    instruction: Drag a RAM stick into slot A2 (second from the CPU).
+    kind: 0
+    componentId: ram_ddr5
+    validSlotIds:
+    - ram_a2
+    - ram_b2
+    connectorType: 
+    safetyTip: "Line up the notch before pressing \u2014 forcing it can crack the
+      slot."
+    badgeOnComplete: 
+  - stepId: s05_ram_2
+    title: Install the second RAM stick
+    instruction: Put the second stick in B2 so the pair runs in dual-channel.
+    kind: 0
+    componentId: ram_ddr5
+    validSlotIds:
+    - ram_a2
+    - ram_b2
+    connectorType: 
+    safetyTip: Press both ends until the clips click.
+    badgeOnComplete: ram_installer
+  - stepId: s06_ssd
+    title: Install the M.2 SSD
+    instruction: Drag the SSD into the M.2 slot below the CPU.
+    kind: 0
+    componentId: ssd_m2
+    validSlotIds:
+    - m2_1
+    connectorType: 
+    safetyTip: Don't overtighten the small M.2 screw.
+    badgeOnComplete: 
+  - stepId: s06b_sata
+    title: Install the SATA SSD
+    instruction: Drag the 2.5-inch SATA SSD onto its mount in the basement, next
+      to the PSU, label facing you.
+    kind: 0
+    componentId: sata_ssd
+    validSlotIds:
+    - sata_1
+    connectorType: 
+    safetyTip: Hold drives by their edges and don't drop them.
+    badgeOnComplete: 
+  - stepId: s07_gpu
+    title: Install the graphics card
+    instruction: Drag the graphics card into the PCIe x16 slot.
+    kind: 0
+    componentId: gpu
+    validSlotIds: []
+    connectorType: 
+    safetyTip: Support heavy cards so they don't sag.
+    badgeOnComplete: 
+  - stepId: s08_atx24
+    title: Connect 24-pin motherboard power
+    instruction: Tap the PSU's 24-pin cable end, then the 24-pin header on the right
+      edge of the board.
+    kind: 1
+    componentId: 
+    validSlotIds: []
+    connectorType: ATX24
+    safetyTip: Connectors only fit one way. If it resists, check the latch side.
+    badgeOnComplete: 
+  - stepId: s09_eps
+    title: Connect CPU power (EPS 8-pin)
+    instruction: Tap the PSU's CPU 8-pin cable, then the header at the top-left of
+      the board.
+    kind: 1
+    componentId: 
+    validSlotIds: []
+    connectorType: EPS8
+    safetyTip: "Don't mix up CPU 8-pin and PCIe 8-pin cables \u2014 they're keyed
+      differently."
+    badgeOnComplete: 
+  - stepId: s09b_sata_power
+    title: Connect SATA power
+    instruction: Tap the PSU's SATA power cable, then the wide power socket on the
+      SSD.
+    kind: 1
+    componentId: 
+    validSlotIds: []
+    connectorType: SATA
+    safetyTip: The SATA power plug is L-shaped, so it only fits one way round.
+    badgeOnComplete: 
+  - stepId: s09c_sata_data
+    title: Connect SATA data
+    instruction: Tap the red SATA data cable, then the narrow data socket on the
+      SSD. Its other end is already on the motherboard.
+    kind: 1
+    componentId: 
+    validSlotIds: []
+    connectorType: SATADATA
+    safetyTip: Push the data plug straight in until it clicks; don't lever it sideways.
+    badgeOnComplete: 
+  - stepId: s10_fpanel
+    title: Connect the front-panel header
+    instruction: Tap the case's front-panel cable, then the header at the bottom-right
+      of the board.
+    kind: 1
+    componentId: 
+    validSlotIds: []
+    connectorType: FPANEL
+    safetyTip: Check the motherboard manual for the power switch and LED pin layout.
+    badgeOnComplete: cable_expert

@@ -1,0 +1,218 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="BuildAR.uss" />
+    <!-- Transparent screen: the ARCameraBackground renders the live camera feed underneath. -->
+    <ui:VisualElement name="screen" class="screen screen--ar" picking-mode="Ignore">
+
+        <!-- A photo being scanned instead of the camera. The code sizes photo-image to frame the whole photo or the part. -->
+        <ui:VisualElement name="photo-view" class="photo-view" picking-mode="Ignore" style="display: none;">
+            <ui:VisualElement name="photo-image" class="photo-image" picking-mode="Ignore" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="ar-overlay" class="ar-dim" picking-mode="Ignore">
+            <ui:VisualElement name="scan-frame" class="scan-frame" picking-mode="Ignore">
+                <ui:VisualElement class="corner corner--tl" picking-mode="Ignore" />
+                <ui:VisualElement class="corner corner--tr" picking-mode="Ignore" />
+                <ui:VisualElement class="corner corner--bl" picking-mode="Ignore" />
+                <ui:VisualElement class="corner corner--br" picking-mode="Ignore" />
+                <ui:VisualElement name="scan-line" class="scan-line" picking-mode="Ignore">
+                    <ui:VisualElement class="scan-line-glow" picking-mode="Ignore" />
+                </ui:VisualElement>
+                <ui:VisualElement class="marker marker--1" picking-mode="Ignore" />
+                <ui:VisualElement class="marker marker--2" picking-mode="Ignore" />
+                <ui:VisualElement class="marker marker--3" picking-mode="Ignore" />
+                <ui:VisualElement class="marker marker--4" picking-mode="Ignore" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="detect-box" class="detect-box" picking-mode="Ignore" style="display: none;">
+                <ui:VisualElement class="detect-glow" picking-mode="Ignore" />
+                <ui:VisualElement name="detect-tag" class="detect-tag" picking-mode="Ignore">
+                    <ui:Label name="detect-label" text="GPU · 92%" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="ar-labels" class="ar-dim" picking-mode="Ignore" />
+
+            <ui:VisualElement name="status" class="ar-status" picking-mode="Ignore">
+                <ui:VisualElement class="status-pill" picking-mode="Ignore">
+                    <BuildAR.UI.Spinner name="status-spinner" />
+                    <BuildAR.UI.LineIcon name="status-icon" icon="scan" style="display: none;" />
+                    <ui:Label name="status-label" text="Looking for a component…" />
+                </ui:VisualElement>
+                <ui:Label name="status-hint" text="Fit the part inside the frame, in good light" class="status-hint" />
+                <ui:VisualElement name="scan-mode" class="pill pill--lightning scan-mode" picking-mode="Ignore" style="display: none;">
+                    <BuildAR.UI.LineIcon icon="info" />
+                    <ui:Label name="scan-mode-label" text="Demo mode · simulated scan" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Behind the tips and photo menus while one is open: a tap anywhere outside the menu closes it. It sits
+             under the top bar, so its buttons still switch between the menus. -->
+        <ui:VisualElement name="sheet-scrim" class="sheet-scrim" style="display: none;" />
+
+        <ui:VisualElement name="ar-topbar" class="ar-topbar" picking-mode="Ignore">
+            <ui:VisualElement class="ar-left" picking-mode="Ignore">
+                <ui:Button name="btn-back" class="icon-btn icon-btn--glass"><BuildAR.UI.LineIcon icon="chevron-left" /></ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement class="ar-title" picking-mode="Ignore">
+                <ui:VisualElement class="live-dot" />
+                <ui:Label text="AR Scanner" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ar-right" picking-mode="Ignore">
+                <ui:Button name="btn-photo-zoom" class="icon-btn icon-btn--glass" tooltip="Zoom to the part or show the whole photo" style="display: none;"><BuildAR.UI.LineIcon name="photo-zoom-icon" icon="zoom-out" /></ui:Button>
+                <ui:Button name="btn-tips" class="icon-btn icon-btn--glass" tooltip="Scanning tips"><BuildAR.UI.LineIcon icon="info" /></ui:Button>
+                <ui:Button name="btn-photo" class="icon-btn icon-btn--glass" tooltip="Scan a picture"><BuildAR.UI.LineIcon icon="image" /></ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Recognised component card -->
+        <ui:VisualElement name="info-sheet" class="sheet sheet--hidden">
+            <ui:VisualElement class="sheet-handle" />
+            <ui:VisualElement class="sheet-head">
+                <ui:VisualElement class="sheet-icon"><BuildAR.UI.LineIcon name="sheet-icon" icon="gpu" /></ui:VisualElement>
+                <ui:VisualElement class="sheet-titles">
+                    <ui:Label text="COMPONENT RECOGNIZED" class="kicker" />
+                    <ui:Label name="sheet-title" text="Graphics Card" class="sheet-title" />
+                </ui:VisualElement>
+                <ui:Button name="btn-close-sheet" class="icon-btn icon-btn--sm"><BuildAR.UI.LineIcon icon="close" /></ui:Button>
+            </ui:VisualElement>
+            <ui:Label name="sheet-desc" text="Draws images, video and 3D graphics." class="sheet-desc" />
+            <ui:VisualElement name="sheet-chips" class="chip-row" />
+            <!-- A part that comes in kinds the scanner can't tell apart (DDR3 / DDR4 / DDR5): the learner picks one. -->
+            <ui:VisualElement name="kind-choice" class="kind-choice" style="display: none;">
+                <ui:Label text="WHICH KIND IS IT?" class="kicker kicker--muted" />
+                <ui:VisualElement name="kind-row" class="kind-row" />
+                <ui:Label name="kind-hint" text="" class="small kind-hint" />
+            </ui:VisualElement>
+            <ui:VisualElement name="sheet-actions" class="sheet-actions">
+                <ui:Button name="btn-view-3d" class="btn btn-primary grow gap-right">
+                    <ui:Label text="View 3D model" />
+                    <BuildAR.UI.LineIcon icon="cube" />
+                </ui:Button>
+                <ui:Button name="btn-learn-more" class="btn btn-secondary grow">
+                    <ui:Label text="Learn more" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:Button name="btn-labels" class="btn btn-navy" style="margin-top: 10px;">
+                <BuildAR.UI.LineIcon icon="tag" style="margin-left: 0; margin-right: 8px;" />
+                <ui:Label name="btn-labels-label" text="Show labels" />
+            </ui:Button>
+
+            <!-- The 3D model spawned in the room (ScannedModelPresenter) -->
+            <ui:Label name="model-note" class="small model-note" text="" />
+            <ui:VisualElement name="model-actions" class="sheet-toggle-row">
+                <ui:Button name="btn-place-model" class="btn btn-secondary btn-sm grow gap-right">
+                    <BuildAR.UI.LineIcon icon="scan" style="margin-left: 0; margin-right: 6px;" />
+                    <ui:Label text="Place again" />
+                </ui:Button>
+                <ui:Button name="btn-hide-model" class="btn btn-secondary btn-sm grow">
+                    <BuildAR.UI.LineIcon icon="cube" style="margin-left: 0; margin-right: 6px;" />
+                    <ui:Label name="btn-hide-model-label" text="Hide model" />
+                </ui:Button>
+            </ui:VisualElement>
+
+            <!-- Closes the card and looks again: the live camera, or back to it from a photo. -->
+            <ui:Button name="btn-scan-again" class="btn btn-secondary icon-first scan-again">
+                <BuildAR.UI.LineIcon icon="scan" />
+                <ui:Label text="Scan again" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <!-- A photo with no part the app knows in it (or one that won't open). Filled in by ShowPhotoProblem. -->
+        <ui:VisualElement name="nopart-sheet" class="sheet sheet--hidden">
+            <ui:VisualElement class="sheet-handle" />
+            <ui:VisualElement class="sheet-head">
+                <ui:VisualElement class="sheet-icon nopart-icon"><BuildAR.UI.LineIcon name="nopart-icon" icon="warning" /></ui:VisualElement>
+                <ui:VisualElement class="sheet-titles">
+                    <ui:Label name="nopart-kicker" text="NOT RECOGNIZED" class="kicker kicker--warn" />
+                    <ui:Label name="nopart-title" text="This doesn't look like a PC part" class="sheet-title" />
+                </ui:VisualElement>
+                <ui:Button name="btn-close-nopart" class="icon-btn icon-btn--sm"><BuildAR.UI.LineIcon icon="close" /></ui:Button>
+            </ui:VisualElement>
+            <ui:Label name="nopart-desc" text="" class="sheet-desc" />
+            <ui:VisualElement name="nopart-tips" class="nopart-tips">
+                <ui:Label text="FOR A GOOD SCAN" class="kicker kicker--muted nopart-tips-title" />
+                <ui:VisualElement class="nopart-tip"><BuildAR.UI.LineIcon icon="check" /><ui:Label text="Show one part, filling most of the photo" /></ui:VisualElement>
+                <ui:VisualElement class="nopart-tip"><BuildAR.UI.LineIcon icon="check" /><ui:Label text="Use good, even light, without glare" /></ui:VisualElement>
+                <ui:VisualElement class="nopart-tip"><BuildAR.UI.LineIcon icon="check" /><ui:Label text="Hold the phone steady so the part is sharp" /></ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="sheet-actions">
+                <ui:Button name="btn-nopart-retry" class="btn btn-primary grow gap-right">
+                    <ui:Label text="Try another photo" />
+                    <BuildAR.UI.LineIcon icon="image" />
+                </ui:Button>
+                <ui:Button name="btn-nopart-camera" class="btn btn-secondary grow">
+                    <ui:Label text="Back to camera" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- "Before you scan": opens with the scanner until turned off, and from the info button any time. -->
+        <ui:VisualElement name="tips-sheet" class="sheet sheet--hidden">
+            <ui:VisualElement class="sheet-handle" />
+            <ui:VisualElement class="sheet-head">
+                <ui:VisualElement class="sheet-icon"><BuildAR.UI.LineIcon icon="camera" /></ui:VisualElement>
+                <ui:VisualElement class="sheet-titles">
+                    <ui:Label text="BEFORE YOU SCAN" class="kicker" />
+                    <ui:Label text="Give the camera a clear view" class="sheet-title" />
+                </ui:VisualElement>
+                <ui:Button name="btn-close-tips" class="icon-btn icon-btn--sm"><BuildAR.UI.LineIcon icon="close" /></ui:Button>
+            </ui:VisualElement>
+            <ui:Label text="The scanner can only recognize what the camera sees clearly. A quick check first makes a big difference." class="sheet-desc" />
+            <ui:VisualElement class="scan-tips">
+                <ui:VisualElement class="scan-tip">
+                    <ui:VisualElement class="scan-tip-icon"><BuildAR.UI.LineIcon icon="camera" /></ui:VisualElement>
+                    <ui:VisualElement class="scan-tip-text">
+                        <ui:Label text="Clean the camera lens" class="scan-tip-title" />
+                        <ui:Label text="Wipe it gently with a soft, dry cloth. One fingerprint smudge makes every picture blurry." class="scan-tip-body" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="scan-tip">
+                    <ui:VisualElement class="scan-tip-icon"><BuildAR.UI.LineIcon icon="bulb" /></ui:VisualElement>
+                    <ui:VisualElement class="scan-tip-text">
+                        <ui:Label text="Use good light" class="scan-tip-title" />
+                        <ui:Label text="Bright, even light works best. Avoid strong glare and dark shadows." class="scan-tip-body" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="scan-tip">
+                    <ui:VisualElement class="scan-tip-icon"><BuildAR.UI.LineIcon icon="hand" /></ui:VisualElement>
+                    <ui:VisualElement class="scan-tip-text">
+                        <ui:Label text="Hold the phone steady" class="scan-tip-title" />
+                        <ui:Label text="Keep still for a moment so the camera can focus and the picture isn't blurry." class="scan-tip-body" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="scan-tip scan-tip--last">
+                    <ui:VisualElement class="scan-tip-icon"><BuildAR.UI.LineIcon icon="scan" /></ui:VisualElement>
+                    <ui:VisualElement class="scan-tip-text">
+                        <ui:Label text="One part, filling the frame" class="scan-tip-title" />
+                        <ui:Label text="Move close enough that the part fills most of the square on screen." class="scan-tip-body" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button name="btn-tips-hide" class="setting-row tips-hide-row">
+                <ui:VisualElement class="setting-text">
+                    <ui:Label text="Don't show this again" class="setting-title" />
+                    <ui:Label text="You can open these tips any time with the (i) button." class="setting-desc" />
+                </ui:VisualElement>
+                <ui:VisualElement name="tips-hide-switch" class="switch"><ui:VisualElement class="switch-knob" /></ui:VisualElement>
+            </ui:Button>
+            <ui:Button name="btn-tips-start" class="btn btn-primary btn-lg tips-start">
+                <ui:Label text="Start scanning" />
+                <BuildAR.UI.LineIcon icon="scan" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <!-- "Scan a picture": the photos the model can be run on -->
+        <ui:VisualElement name="picker-sheet" class="sheet sheet--hidden">
+            <ui:VisualElement class="sheet-handle" />
+            <ui:VisualElement class="sheet-head" style="margin-bottom: 12px;">
+                <ui:VisualElement class="sheet-titles">
+                    <ui:Label name="picker-kicker" text="SCAN A PICTURE" class="kicker" />
+                    <ui:Label name="picker-title" text="Choose a photo" class="sheet-title" />
+                </ui:VisualElement>
+                <ui:Button name="btn-close-picker" class="icon-btn icon-btn--sm"><BuildAR.UI.LineIcon icon="close" /></ui:Button>
+            </ui:VisualElement>
+            <ui:ScrollView name="picker-list" class="picker-list" style="max-height: 360px;" vertical-scroller-visibility="Hidden" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4188eded89992a545a0ee17a3fb13478, type: 3}
+  m_Name: cable_24pin
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.ComponentDefinitionSO
+  id: cable_24pin
+  displayName: 24-pin ATX Power Cable
+  category: 8
+  icon: {fileID: 0}
+  mlLabel: cable
+  mlAliases: []
+  specChips:
+  - ATX 24-pin
+  - Latching
+  shortDescription: Carries main power from the PSU to the motherboard.
+  whatItDoes: The 24-pin cable supplies the motherboard's main voltages. Its keyed
+    pins and latch make sure it only fits one way and stays in place.
+  keyFacts:
+  - Only fits one way
+  - Press until the latch clicks
+  - Separate from the CPU EPS 8-pin cable
+  installationSteps:
+  - Line up the latch with the tab on the header.
+  - Push straight in until it clicks.
+  - Tug gently to check it's locked.
+  safetyTip: "Never force a connector \u2014 if it doesn't fit, check the orientation."
+  model3DPrefab: {fileID: 7855445402592839051, guid: a8c7e6764c290234fb758986ad701f9a, type: 3}
+  modelRotationEuler: {x: 0, y: 0, z: 0}
+  modelFans: []
+  modelLightBars: []
+  modelPanels: []
+  modelLabels:
+  - title: "Keyed pins"
+    description: "Square and rounded pin shapes mean the connector only fits one way."
+    kind: 1
+    center: {x: 0.0002, y: 0.5, z: 0.5}
+    facing: {x: -1, y: 0, z: 0}
+  - title: "Latching connector"
+    description: "Push it in until the latch clicks over the tab on the header."
+    kind: 4
+    center: {x: 0.03, y: 0.5, z: 0.9942}
+    facing: {x: 0, y: 0, z: 1}
+  - title: "Sleeved wires"
+    description: "The 24 wires carrying the motherboard's main power, wrapped together."
+    kind: 0
+    center: {x: 0.5, y: 0.5, z: 0.8475}
+    facing: {x: 0, y: 0, z: 1}
+  connectionPoints: []
+  arLabels:
+  - text: Latch clip
+    positionInBox: {x: 0.5, y: 0.1}
+    description: 
+  - text: Keyed pins
+    positionInBox: {x: 0.5, y: 0.85}
+    description: 
+  compatibilityRules: []
+  quizQuestions:
+  - {fileID: 11400000, guid: 9452ab265baace04fa481b5dd4d5185c, type: 2}
+  - {fileID: 11400000, guid: 77a0d5e3908c58a4e9e7690f91c662c2, type: 2}

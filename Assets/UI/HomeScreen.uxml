@@ -1,0 +1,102 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="BuildAR.uss" />
+    <ui:Template name="BottomNav" src="BottomNav.uxml" />
+
+    <ui:VisualElement name="screen" class="screen">
+        <ui:ScrollView name="scroll" class="scroll" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden">
+
+            <ui:VisualElement class="app-bar">
+                <ui:VisualElement class="app-brand">
+                    <ui:VisualElement name="app-logo" class="app-logo" />
+                    <ui:Label text="PCBuild" class="app-name" />
+                    <ui:Label text="AR" class="app-name app-name--accent" />
+                </ui:VisualElement>
+                <ui:VisualElement class="app-bar-right">
+                    <ui:Button name="btn-theme" class="icon-btn icon-btn--sm app-theme-btn" tooltip="Dark mode">
+                        <BuildAR.UI.LineIcon name="theme-icon" icon="moon" />
+                    </ui:Button>
+                    <ui:Button name="btn-profile" class="avatar avatar--bar">
+                        <ui:VisualElement name="profile-avatar" class="avatar-img" picking-mode="Ignore" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="header-row">
+                <ui:VisualElement class="greeting">
+                    <ui:Label name="greeting" text="Good afternoon" class="eyebrow" />
+                    <ui:Label text="Ready to build?" class="h1" />
+                </ui:VisualElement>
+                <BuildAR.UI.ProgressRing name="overall-ring" progress="0" class="ring--sm">
+                    <ui:Label name="overall-ring-label" text="0%" class="ring-label" />
+                </BuildAR.UI.ProgressRing>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="stat-strip">
+                <ui:Button name="chip-streak" class="stat-chip stat-chip--streak"><BuildAR.UI.LineIcon icon="flame" /><ui:Label name="chip-streak-label" text="0" /></ui:Button>
+                <ui:Button name="chip-hearts" class="stat-chip stat-chip--heart"><BuildAR.UI.LineIcon icon="heart" /><ui:Label name="chip-hearts-label" text="15" /></ui:Button>
+                <ui:Button name="chip-coins" class="stat-chip stat-chip--coin"><BuildAR.UI.LineIcon icon="coin" /><ui:Label name="chip-coins-label" text="0" /></ui:Button>
+                <ui:Button name="chip-level" class="stat-chip stat-chip--level stat-chip--last"><BuildAR.UI.LineIcon icon="bolt" /><ui:Label name="chip-level-label" text="Lv 1" /></ui:Button>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="hero-card">
+                <BuildAR.UI.GradientBackground class="brand-gradient--card" />
+                <ui:VisualElement class="hero-top">
+                    <ui:Label text="CURRENT STEP" class="kicker kicker--cyan" />
+                    <ui:Label name="hero-count" text="STEP 1 OF 10" class="hero-count" />
+                </ui:VisualElement>
+                <ui:Label name="hero-title" text="Install the power supply" class="hero-title" />
+                <ui:Label name="hero-desc" text="Slide the PSU into the bottom bay with the fan facing down." class="hero-desc" />
+                <ui:VisualElement class="progress-track progress-track--dark">
+                    <ui:VisualElement name="hero-fill" class="progress-fill progress-fill--cyan" />
+                </ui:VisualElement>
+                <ui:VisualElement class="hero-bottom">
+                    <ui:Label name="hero-percent" text="0% of build complete" class="hero-meta" />
+                    <ui:Button name="btn-resume" class="btn btn-brand btn-sm">
+                        <ui:Label name="btn-resume-label" text="Resume" />
+                        <BuildAR.UI.LineIcon icon="play" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:Label text="Quick actions" class="section-title" />
+            <ui:VisualElement class="grid-2">
+                <ui:Button name="qa-scan" class="action-card">
+                    <ui:VisualElement class="action-icon action-icon--blue"><BuildAR.UI.LineIcon icon="scan" /></ui:VisualElement>
+                    <ui:VisualElement>
+                        <ui:Label text="Scan a component" class="action-title" />
+                        <ui:Label text="Identify parts with AR" class="action-sub" />
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button name="qa-lesson" class="action-card">
+                    <ui:VisualElement class="action-icon action-icon--cyan"><BuildAR.UI.LineIcon icon="book" /></ui:VisualElement>
+                    <ui:VisualElement>
+                        <ui:Label text="Start a lesson" class="action-title" />
+                        <ui:Label name="qa-lesson-sub" text="Continue your path" class="action-sub" />
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button name="qa-practice" class="action-card">
+                    <ui:VisualElement class="action-icon action-icon--green"><BuildAR.UI.LineIcon icon="cube" /></ui:VisualElement>
+                    <ui:VisualElement>
+                        <ui:Label text="Practice assembly" class="action-title" />
+                        <ui:Label text="Build a virtual PC" class="action-sub" />
+                    </ui:VisualElement>
+                </ui:Button>
+                <ui:Button name="qa-quiz" class="action-card">
+                    <ui:VisualElement class="action-icon action-icon--orange"><BuildAR.UI.LineIcon icon="quiz" /></ui:VisualElement>
+                    <ui:VisualElement>
+                        <ui:Label text="Memorize" class="action-title" />
+                        <ui:Label name="qa-quiz-sub" text="Daily review" class="action-sub" />
+                    </ui:VisualElement>
+                </ui:Button>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="section-row">
+                <ui:Label text="Learning progress" class="section-title" />
+                <ui:Button name="btn-see-all" text="See all" class="link-btn" />
+            </ui:VisualElement>
+            <ui:VisualElement name="category-progress" class="card" />
+
+        </ui:ScrollView>
+        <ui:Instance template="BottomNav" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cedca804eff092449184c3d0b4d5557, type: 3}
+  m_Name: l01_inside_pc
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.LessonSO
+  lessonId: l01_inside_pc
+  title: What's inside a PC
+  summary: A tour of the main parts.
+  difficulty: 0
+  estimatedMinutes: 5
+  stage: 0
+  order: 0
+  relatedCategory: 7
+  relatedComponentId: pc_case
+  prerequisiteLessonIds: []
+  quiz:
+  - {fileID: 11400000, guid: 5680420dea5938846bb6978446471158, type: 2}
+  - {fileID: 11400000, guid: e7310cfe1355dbf41828068e60c58180, type: 2}
+  - {fileID: 11400000, guid: bf40be4843316b04d8a428b72eb267e6, type: 2}
+  - {fileID: 11400000, guid: 471a35b6557051d0a85f964ae92c303f, type: 2}
+  - {fileID: 11400000, guid: fbfb1f31b5b05c508c6346ae402d8fd7, type: 2}
+  - {fileID: 11400000, guid: 1ab2b536d325510db98d4962aba196fc, type: 2}
+  - {fileID: 11400000, guid: 1236ce3e67e3550bb77faf45dfc4fad7, type: 2}
+  - {fileID: 11400000, guid: f28036f8b000506f9a03633743d5e503, type: 2}
+  - {fileID: 11400000, guid: 721427cae3b55170b2528ad343f1b747, type: 2}
+  - {fileID: 11400000, guid: 43d52f8abd055bd68f4bbf42a598c007, type: 2}
+  - {fileID: 11400000, guid: 665932d80afc5dc49fff8bfedf8d2bd3, type: 2}
+  - {fileID: 11400000, guid: 7b46bf8efa3b56bfa0f2892735e1491e, type: 2}
+  - {fileID: 11400000, guid: 58d30a97aad65ee4935817943b1751b0, type: 2}
+  - {fileID: 11400000, guid: 931b77d317f4575c8db48009dbf274d3, type: 2}
+  - {fileID: 11400000, guid: 0759bec8bb84546bae09d47b47fe5e1d, type: 2}
+  - {fileID: 11400000, guid: fa1a905a4736519a900ca52884be7fe6, type: 2}
+  - {fileID: 11400000, guid: 259b1957b4155668975e1f8a7c5850e5, type: 2}
+  - {fileID: 11400000, guid: d178c54c92725be8bf32134aabe02fd3, type: 2}
+  - {fileID: 11400000, guid: faa758bf240b59349b16d34e76b11012, type: 2}
+  - {fileID: 11400000, guid: 28191d7d2abb52dcaadc75106f1691c3, type: 2}

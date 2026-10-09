@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cedca804eff092449184c3d0b4d5557, type: 3}
+  m_Name: l10_workspace
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.LessonSO
+  lessonId: l10_workspace
+  title: Prepare a safe workspace
+  summary: Static, tools and light.
+  difficulty: 0
+  estimatedMinutes: 4
+  stage: 2
+  order: 0
+  relatedCategory: 7
+  relatedComponentId: pc_case
+  prerequisiteLessonIds:
+  - l08_sockets
+  quiz:
+  - {fileID: 11400000, guid: 14e7a323eda8ddd43bbee99fb28fcb6a, type: 2}
+  - {fileID: 11400000, guid: 3dc2bee7d2292cf44b882795d864daaf, type: 2}
+  - {fileID: 11400000, guid: 574a5b9eed6553688ef16c1693d99845, type: 2}
+  - {fileID: 11400000, guid: b12d55fcfbeb5da8876d094366bd97c1, type: 2}
+  - {fileID: 11400000, guid: 50ba97d5d2555468bb9dcafe5735829f, type: 2}
+  - {fileID: 11400000, guid: 45c7e9a67dff5338955a5392cc75fb5f, type: 2}
+  - {fileID: 11400000, guid: 25285f1c76b85b15bee94e6470560da5, type: 2}
+  - {fileID: 11400000, guid: 0b89101850e55ea780c5cfcd2b3db763, type: 2}
+  - {fileID: 11400000, guid: 4bd490aef9775a9ab8b31bb3a2f1d418, type: 2}
+  - {fileID: 11400000, guid: 985dae6c8e245a94b4166d4e1f8bbc56, type: 2}
+  - {fileID: 11400000, guid: b1dc09d405e854998cff04dc72de5a94, type: 2}
+  - {fileID: 11400000, guid: b7b010d5e55e5527ba96809cc38bba65, type: 2}
+  - {fileID: 11400000, guid: 204cb133d056574e832400610b65f252, type: 2}
+  - {fileID: 11400000, guid: dc58753774d05d46bcdb7b31f1857c1f, type: 2}
+  - {fileID: 11400000, guid: 4cd6723f8e7c5a528245b88d78983e54, type: 2}
+  - {fileID: 11400000, guid: 2a937cdbee4b5be981961a5a135806d4, type: 2}
+  - {fileID: 11400000, guid: b27b795e6e1a57558fa9a19fb738a7a9, type: 2}
+  - {fileID: 11400000, guid: 2773941baf7e5f31987226b229ed0ecd, type: 2}
+  - {fileID: 11400000, guid: d1df4bafe2785b648eb13d95064cce17, type: 2}
+  - {fileID: 11400000, guid: 138f219be38f59489e9a346f7e8fb6ff, type: 2}

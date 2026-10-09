@@ -1,0 +1,73 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="BuildAR.uss" />
+
+    <ui:VisualElement name="screen" class="screen">
+        <ui:VisualElement class="top-bar">
+            <ui:Button name="btn-back" class="icon-btn icon-btn--sm">
+                <BuildAR.UI.LineIcon icon="chevron-left" />
+            </ui:Button>
+            <ui:Label name="crumb" text="CPU" class="top-title" />
+            <ui:Button name="btn-scan" class="icon-btn icon-btn--sm">
+                <BuildAR.UI.LineIcon icon="scan" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <!-- 3D viewer: ModelViewerStage renders into a RenderTexture used as this element's background. -->
+        <ui:VisualElement name="viewer" class="viewer">
+            <ui:VisualElement class="viewer-grid" picking-mode="Ignore" />
+            <ui:VisualElement name="hotspot-layer" class="hotspot-layer" picking-mode="Ignore" />
+            <ui:VisualElement class="viewer-badge pill pill--blue" picking-mode="Ignore">
+                <BuildAR.UI.LineIcon icon="cube" />
+                <ui:Label text="3D MODEL" />
+            </ui:VisualElement>
+            <ui:VisualElement class="viewer-tools">
+                <ui:Button name="btn-zoom-in" class="icon-btn icon-btn--sm icon-btn--glass"><BuildAR.UI.LineIcon icon="zoom-in" /></ui:Button>
+                <ui:Button name="btn-zoom-out" class="icon-btn icon-btn--sm icon-btn--glass"><BuildAR.UI.LineIcon icon="zoom-out" /></ui:Button>
+                <ui:Button name="btn-explode" class="icon-btn icon-btn--sm icon-btn--glass"><BuildAR.UI.LineIcon icon="layers" /></ui:Button>
+                <ui:Button name="btn-reset-view" class="icon-btn icon-btn--sm icon-btn--glass"><BuildAR.UI.LineIcon icon="refresh" /></ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement name="viewer-hint" class="viewer-hint" picking-mode="Ignore">
+                <BuildAR.UI.LineIcon icon="hand" />
+                <ui:Label text="Drag to rotate · Pinch to zoom · Tap a dot" />
+            </ui:VisualElement>
+            <ui:VisualElement name="hotspot-card" class="hotspot-card" style="display: none;">
+                <ui:Label name="hotspot-title" text="Heat spreader" class="hotspot-card-title" />
+                <ui:Label name="hotspot-body" text="Metal lid that moves heat to the cooler." class="hotspot-card-body" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="detail-head">
+            <ui:VisualElement class="grow">
+                <ui:Label name="detail-name" text="AMD Ryzen 5 7600" class="detail-name" />
+                <ui:Label name="detail-sub" text="Central Processing Unit" class="detail-sub" />
+            </ui:VisualElement>
+            <ui:VisualElement name="mastery-pill" class="pill pill--green" style="display: none;">
+                <BuildAR.UI.LineIcon icon="check" />
+                <ui:Label text="Mastered" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:ScrollView name="tabs" mode="Horizontal" class="tabs" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden">
+            <ui:Button name="tab-overview" text="Overview" class="tab active" />
+            <ui:Button name="tab-parts" text="Parts" class="tab" />
+            <ui:Button name="tab-compatibility" text="Compatibility" class="tab" />
+            <ui:Button name="tab-installation" text="Installation" class="tab" />
+            <ui:Button name="tab-quiz" text="Quiz" class="tab" />
+        </ui:ScrollView>
+
+        <ui:ScrollView name="tab-body" class="scroll tab-body" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" />
+
+        <ui:VisualElement name="lesson-footer" class="lesson-footer" style="display: none;">
+            <ui:VisualElement class="lesson-footer-head">
+                <ui:Label text="LESSON CHECKLIST" class="kicker" />
+                <ui:Label name="lesson-steps-hint" text="0 of 5 done" class="small" />
+            </ui:VisualElement>
+            <ui:VisualElement name="lesson-checklist" class="lesson-checklist" />
+            <ui:Button name="btn-complete-lesson" class="btn btn-primary">
+                <ui:Label name="btn-complete-lesson-label" text="Complete lesson" />
+                <BuildAR.UI.LineIcon name="btn-complete-lesson-icon" icon="lock" />
+            </ui:Button>
+            <ui:VisualElement class="safe-inset" picking-mode="Ignore" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

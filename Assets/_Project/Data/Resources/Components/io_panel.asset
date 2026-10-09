@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4188eded89992a545a0ee17a3fb13478, type: 3}
+  m_Name: io_panel
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.ComponentDefinitionSO
+  id: io_panel
+  displayName: Rear I/O Ports
+  category: 9
+  icon: {fileID: 0}
+  mlLabel: io_panel
+  mlAliases: []
+  specChips:
+  - USB-A
+  - HDMI
+  - RJ-45
+  - Audio
+  shortDescription: Where your keyboard, mouse, network and speakers connect.
+  whatItDoes: The rear I/O panel exposes the motherboard's USB, video, network and
+    audio ports through the back of the case.
+  keyFacts:
+  - USB-A for keyboard and mouse
+  - RJ-45 for wired network
+  - Green audio jack for speakers
+  installationSteps:
+  - Connect keyboard and mouse to USB.
+  - Connect the monitor to the graphics card (not HDMI here) if you have one.
+  - Plug in Ethernet and speakers.
+  safetyTip: 
+  model3DPrefab: {fileID: 1665881535655767138, guid: 32c01a466434b404292a706160af3691, type: 3}
+  modelRotationEuler: {x: 0, y: 0, z: 180}
+  modelFans: []
+  modelLightBars: []
+  modelPanels: []
+  modelLabels:
+  - title: "USB-A ports"
+    description: "Keyboard, mouse and flash drives. Blue ones are USB 3 (faster)."
+    kind: 5
+    center: {x: 0.86, y: 0.4766, z: 0.68}
+    facing: {x: 0, y: -1, z: 0}
+  - title: "Ethernet (RJ-45)"
+    description: "Wired network connection."
+    kind: 5
+    center: {x: 0.705, y: 0.4285, z: 0.43}
+    facing: {x: 0, y: -1, z: 0}
+  - title: "HDMI and DisplayPort"
+    description: "Video from the CPU's graphics. With a graphics card, use its ports instead."
+    kind: 5
+    center: {x: 0.57, y: 0.1701, z: 0.6}
+    facing: {x: 0, y: -1, z: 0}
+  - title: "Wi-Fi antennas"
+    description: "Screw the Wi-Fi antennas onto these gold connectors."
+    kind: 6
+    center: {x: 0.375, y: 0.4937, z: 0.68}
+    facing: {x: 0, y: -1, z: 0}
+  - title: "Audio jacks"
+    description: "Green = speakers or headphones, pink = microphone."
+    kind: 5
+    center: {x: 0.14, y: 0.4749, z: 0.55}
+    facing: {x: 0, y: -1, z: 0}
+  connectionPoints: []
+  arLabels:
+  - text: USB-A
+    positionInBox: {x: 0.15, y: 0.4}
+    description: 
+  - text: HDMI
+    positionInBox: {x: 0.35, y: 0.4}
+    description: 
+  - text: Ethernet
+    positionInBox: {x: 0.6, y: 0.5}
+    description: 
+  - text: Audio
+    positionInBox: {x: 0.9, y: 0.5}
+    description: 
+  compatibilityRules: []
+  quizQuestions:
+  - {fileID: 11400000, guid: cca0fe1f78cfba64c912c60983f9cb71, type: 2}
+  - {fileID: 11400000, guid: 851829a4b79e73b4bac43b355b3e13c4, type: 2}

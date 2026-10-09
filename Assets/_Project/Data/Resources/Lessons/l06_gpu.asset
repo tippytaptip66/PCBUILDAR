@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cedca804eff092449184c3d0b4d5557, type: 3}
+  m_Name: l06_gpu
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.LessonSO
+  lessonId: l06_gpu
+  title: Graphics cards
+  summary: How pictures get drawn.
+  difficulty: 0
+  estimatedMinutes: 6
+  stage: 0
+  order: 5
+  relatedCategory: 4
+  relatedComponentId: gpu
+  prerequisiteLessonIds:
+  - l01_inside_pc
+  quiz:
+  - {fileID: 11400000, guid: a4d20a725f45fcd44889c2d56fea51d1, type: 2}
+  - {fileID: 11400000, guid: 3d91767c5a510724fa91a391978a8bf9, type: 2}
+  - {fileID: 11400000, guid: 9fba84868b64588b9f606e1942333bc3, type: 2}
+  - {fileID: 11400000, guid: 9892897dcdb554a89e687a33f0221b1f, type: 2}
+  - {fileID: 11400000, guid: c1a3473264f65b498fd9f80a9f2e424f, type: 2}
+  - {fileID: 11400000, guid: 35b2976e5c435ce8862dab858e01a39a, type: 2}
+  - {fileID: 11400000, guid: 37f9cf815be75349bdd56ed355e9074a, type: 2}
+  - {fileID: 11400000, guid: acf8c97a6fa550be9a1e09327d0ac9cf, type: 2}
+  - {fileID: 11400000, guid: e4f87c7ab4bb556dae9edba30ef9c616, type: 2}
+  - {fileID: 11400000, guid: 2ca2becbfe3a54328402352f4f71fa56, type: 2}
+  - {fileID: 11400000, guid: b67df00716e55f1bbf612483f9184878, type: 2}
+  - {fileID: 11400000, guid: e859418a1da05a48891b975e64c6dd81, type: 2}
+  - {fileID: 11400000, guid: f053bd0ac51b5f3aa17d864d585232d0, type: 2}
+  - {fileID: 11400000, guid: d19f02bbd3025122ba9a1cb80891da9d, type: 2}
+  - {fileID: 11400000, guid: 26003c64705d5870a6465ef1f23d4e45, type: 2}
+  - {fileID: 11400000, guid: 822c0aa4465058f9afc7d5297cb4c278, type: 2}
+  - {fileID: 11400000, guid: 71ab36c841205d5ca5fe6705c1647125, type: 2}
+  - {fileID: 11400000, guid: 2f9cec43034a5921a260ef1259a22f8b, type: 2}
+  - {fileID: 11400000, guid: 35d279de476d5fbb8155ca23f02c1a32, type: 2}
+  - {fileID: 11400000, guid: d1e33d4f44365088881fc143d6be6990, type: 2}

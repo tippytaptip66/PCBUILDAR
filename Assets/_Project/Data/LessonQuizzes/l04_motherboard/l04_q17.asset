@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5c81bd7c0110f4787c3c067abde81f, type: 3}
+  m_Name: l04_q17
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.QuizQuestionSO
+  questionType: 3
+  questionText: "Match each header to what plugs into it."
+  options: []
+  correctOptionIndex: 0
+  statementIsTrue: 0
+  answer: 
+  acceptedAnswers: []
+  distractors: []
+  pairs:
+  - left: "CPU_FAN"
+    right: "CPU cooler fan"
+  - left: "Front panel (F_PANEL)"
+    right: "Power button and lights"
+  - left: "USB 3.0 header"
+    right: "Front USB ports"
+  - left: "HD_AUDIO"
+    right: "Front headphone jack"
+  explanation: "Headers are the small pin blocks the case's front-panel cables plug into."
+  isSafetyQuestion: 0

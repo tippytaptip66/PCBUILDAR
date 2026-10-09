@@ -1,0 +1,95 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="BuildAR.uss" />
+    <ui:Template name="BottomNav" src="BottomNav.uxml" />
+
+    <ui:VisualElement name="screen" class="screen">
+        <ui:ScrollView name="scroll" class="scroll" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden">
+            <ui:Label name="journey-label" text="Your journey" class="eyebrow" style="margin-top: 6px;" />
+            <ui:Label text="My Progress" class="h1" />
+
+            <ui:VisualElement class="overall-card">
+                <BuildAR.UI.GradientBackground class="brand-gradient--card" />
+                <BuildAR.UI.ProgressRing name="overall-ring" progress="0" class="ring--lg">
+                    <ui:Label name="overall-percent" text="0%" class="ring-label" />
+                </BuildAR.UI.ProgressRing>
+                <ui:VisualElement class="overall-text">
+                    <ui:Label text="OVERALL COMPLETION" class="kicker kicker--cyan" />
+                    <ui:Label name="overall-title" text="Great start!" class="overall-title" />
+                    <ui:Label name="overall-body" text="Keep going to unlock more badges." class="overall-body" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="stat-grid">
+                <ui:VisualElement class="stat-card">
+                    <ui:VisualElement class="stat-icon action-icon--blue"><BuildAR.UI.LineIcon icon="cpu" /></ui:VisualElement>
+                    <ui:Label name="stat-components" text="0/10" class="stat-value" />
+                    <ui:Label text="Components mastered" class="stat-label" />
+                </ui:VisualElement>
+                <ui:VisualElement class="stat-card">
+                    <ui:VisualElement class="stat-icon action-icon--green"><BuildAR.UI.LineIcon icon="cube" /></ui:VisualElement>
+                    <ui:Label name="stat-assembly" text="0/10" class="stat-value" />
+                    <ui:Label text="Assembly steps done" class="stat-label" />
+                </ui:VisualElement>
+                <ui:VisualElement class="stat-card">
+                    <ui:VisualElement class="stat-icon action-icon--orange"><BuildAR.UI.LineIcon icon="cards" /></ui:VisualElement>
+                    <ui:Label name="stat-cards" text="0" class="stat-value" />
+                    <ui:Label text="Quiz cards learned" class="stat-label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="streak-card">
+                <BuildAR.UI.GradientBackground class="brand-gradient--card" />
+                <ui:VisualElement class="streak-head">
+                    <ui:VisualElement class="streak-flame"><BuildAR.UI.LineIcon icon="flame" /></ui:VisualElement>
+                    <ui:VisualElement class="streak-titles">
+                        <ui:Label name="streak-count" text="0 day streak" class="streak-title" />
+                        <ui:Label name="streak-tier" text="Answer 2 questions today to start a streak" class="streak-sub" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="hud-chip hud-chip--dark">
+                        <BuildAR.UI.LineIcon icon="snowflake" />
+                        <ui:Label name="streak-freezes" text="0" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="week-strip-host" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="card level-card">
+                <ui:VisualElement class="level-row">
+                    <ui:VisualElement class="level-badge"><ui:Label name="level-number" text="1" /></ui:VisualElement>
+                    <ui:VisualElement class="level-text">
+                        <ui:Label name="level-title" text="Level 1" class="h3" />
+                        <ui:Label name="level-sub" text="0 / 100 XP to level 2" class="small" />
+                    </ui:VisualElement>
+                    <ui:Button name="btn-shop" class="btn btn-sm btn-navy btn-coins">
+                        <BuildAR.UI.LineIcon icon="coin" />
+                        <ui:Label name="coins-label" text="0 · Shop" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement class="progress-track">
+                    <ui:VisualElement name="level-fill" class="progress-fill progress-fill--blue" />
+                </ui:VisualElement>
+                <ui:VisualElement class="level-stats">
+                    <ui:Label name="week-xp" text="0 XP this week" class="small" />
+                    <ui:Label name="inventory" text="3 hints · 0 Super Hearts" class="small" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <!-- What the learner owns: filled in by ProgressScreenController from the shop list -->
+            <ui:VisualElement class="section-row">
+                <ui:Label text="Inventory" class="section-title" />
+                <ui:Button name="btn-inventory-shop" text="Shop" class="link-btn" />
+            </ui:VisualElement>
+            <ui:VisualElement name="inventory-list" class="card inventory-list" />
+
+            <ui:VisualElement class="section-row">
+                <ui:Label text="Achievements" class="section-title" />
+                <ui:Label name="badge-count" text="0 of 6" class="small" />
+            </ui:VisualElement>
+            <ui:VisualElement name="badge-grid" class="badge-grid" />
+
+            <ui:Label text="Mastery by component" class="section-title" />
+            <ui:VisualElement name="category-progress" class="card" />
+        </ui:ScrollView>
+        <ui:Instance template="BottomNav" />
+    </ui:VisualElement>
+</ui:UXML>

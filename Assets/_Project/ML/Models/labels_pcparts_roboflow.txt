@@ -1,0 +1,12 @@
+cpu
+cpu_cooler
+disk_drive
+front_panel
+gpu
+gpu_slot
+motherboard
+optical_drive
+psu
+ram_slot
+ram_stick
+rear_io

@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4188eded89992a545a0ee17a3fb13478, type: 3}
+  m_Name: ram_ddr5
+  m_EditorClassIdentifier: Assembly-CSharp::BuildAR.Data.ComponentDefinitionSO
+  id: ram_ddr5
+  displayName: Memory (DDR5 RAM)
+  category: 2
+  icon: {fileID: 0}
+  mlLabel: ram
+  mlAliases: []
+  specChips:
+  - DDR5
+  - 16 GB
+  - 5600 MT/s
+  shortDescription: Fast, temporary memory for running programs. Cleared when the
+    PC turns off.
+  whatItDoes: RAM (Random Access Memory) holds the data the CPU is working on right
+    now. More RAM lets you run more programs at once.
+  keyFacts:
+  - "DDR5 \u2014 only fits DDR5 slots"
+  - Install sticks in pairs for dual-channel
+  - The notch only lines up one way
+  installationSteps:
+  - Open the clips at the ends of the slot.
+  - Line up the notch with the key in the slot.
+  - Press down firmly on both ends until the clips click.
+  - With two sticks, use slots A2 and B2.
+  safetyTip: "Hold RAM by its edges \u2014 don't touch the gold contacts."
+  model3DPrefab: {fileID: 529272442393289577, guid: 125f37af7de66194babfc5217d957a39, type: 3}
+  modelRotationEuler: {x: 0, y: 0, z: 180}
+  modelFans: []
+  modelLightBars: []
+  modelPanels: []
+  modelLabels:
+  - title: "Gold contacts"
+    description: "Edge connector that carries data and power. Hold the stick by its edges."
+    kind: 1
+    center: {x: 0.25, y: 0.8672, z: 0.07}
+    facing: {x: 0, y: 1, z: 0}
+  - title: "Key notch"
+    description: "Lines up with the key in the slot. DDR3, DDR4 and DDR5 each have it in a different place, so the wrong one won't fit."
+    kind: 3
+    center: {x: 0.49, y: 0.6756, z: 0.03}
+    facing: {x: 0, y: 1, z: 0}
+  - title: "Heat spreader"
+    description: "Metal cover that spreads heat from the memory chips."
+    kind: 2
+    center: {x: 0.25, y: 0.9903, z: 0.6}
+    facing: {x: 0, y: 1, z: 0}
+  - title: "Label"
+    description: "Says the generation, size and speed, such as DDR5 / PC5, 16 GB, 5600 MT/s."
+    kind: 0
+    center: {x: 0.68, y: 0.9801, z: 0.6}
+    facing: {x: 0, y: 1, z: 0}
+  - title: "Locking notch"
+    description: "The slot's clips snap into the cut-outs at each end to hold the stick."
+    kind: 4
+    center: {x: 0.012, y: 0.6473, z: 0.35}
+    facing: {x: 0, y: 1, z: 0}
+  connectionPoints: []
+  arLabels:
+  - text: Gold contacts
+    positionInBox: {x: 0.5, y: 0.92}
+    description: 
+  - text: Key notch
+    positionInBox: {x: 0.42, y: 0.98}
+    description: 
+  - text: Memory chips
+    positionInBox: {x: 0.3, y: 0.45}
+    description: 
+  - text: Locking notch
+    positionInBox: {x: 0.02, y: 0.6}
+    description: 
+  compatibilityRules:
+  - ruleType: 1
+    stringValue: DDR5
+    intValue: 0
+  quizQuestions:
+  - {fileID: 11400000, guid: e7310cfe1355dbf41828068e60c58180, type: 2}
+  - {fileID: 11400000, guid: 34c6e10beecba8e46b5d4148f873b8d8, type: 2}
+  - {fileID: 11400000, guid: 03dba2788d5c95e45b983ffdc215f5dd, type: 2}
+  - {fileID: 11400000, guid: 3074780cab92e264499e836fd6a49182, type: 2}

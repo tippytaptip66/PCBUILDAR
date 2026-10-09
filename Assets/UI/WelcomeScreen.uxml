@@ -1,0 +1,44 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="BuildAR.uss" />
+    <ui:VisualElement name="screen" class="screen welcome">
+        <BuildAR.UI.GradientBackground />
+
+        <ui:VisualElement class="welcome-top">
+            <ui:VisualElement class="brand">
+                <ui:VisualElement name="brand-mark" class="brand-mark">
+                    <BuildAR.UI.LineIcon icon="cube" class="icon-20 icon-white" />
+                </ui:VisualElement>
+                <ui:Label text="PCBuildAR" class="brand-name" />
+            </ui:VisualElement>
+            <ui:Button name="btn-skip" text="Skip" class="link-btn" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="art" class="welcome-art">
+            <ui:VisualElement class="art-ring art-ring--outer" />
+            <ui:VisualElement name="art-ring-inner" class="art-ring art-ring--inner" />
+            <ui:VisualElement class="art-core">
+                <BuildAR.UI.LineIcon name="slide-icon" icon="cpu" class="icon-art" />
+            </ui:VisualElement>
+            <ui:Label name="tag-1" text="HEAT SPREADER" class="art-tag art-tag--1" />
+            <ui:Label name="tag-2" text="PINS" class="art-tag art-tag--2" />
+            <ui:Label name="tag-3" text="NOTCH" class="art-tag art-tag--3" />
+        </ui:VisualElement>
+
+        <ui:VisualElement class="welcome-copy">
+            <ui:Label name="slide-kicker" text="LEARN · IDENTIFY · ASSEMBLE" class="kicker kicker--cyan" />
+            <ui:Label name="slide-title" text="Learn what's inside a computer" class="welcome-title" />
+            <ui:Label name="slide-body" text="Short, visual lessons explain every part and what it does." class="welcome-body" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="dots" class="dots">
+            <ui:VisualElement class="dot active" />
+            <ui:VisualElement class="dot" />
+            <ui:VisualElement class="dot" />
+        </ui:VisualElement>
+
+        <ui:Button name="btn-next" class="btn btn-brand btn-lg">
+            <ui:Label name="btn-next-label" text="Next" />
+            <BuildAR.UI.LineIcon icon="arrow-right" />
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>
